@@ -22,8 +22,6 @@ do
 	echo ""
 	sleep 3
 	echo Installing requested configuration
-	#for dependency in ${dependencies[@]}
-	#do
 	if [[ "${osInfo[$f]}" == "yum" ]]; then
 		yum install $dependencies -y
 	fi
@@ -33,12 +31,11 @@ do
 	if [[ "${osInfo[$]}" == "apt-get" ]]; then
 		apt-get install $dependencies -y
 	fi
-	#done
 	echo Downloading configuration
 	git clone https://github.com/robertplawski/dotfiles.git
+	echo Applying config!
 	cd dotfiles
 	cp ./* -r ~/.config
-	echo Applying configuration
 	echo Done! Enjoy your new configured system
 	
     fi

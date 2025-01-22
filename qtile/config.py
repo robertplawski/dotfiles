@@ -1,14 +1,11 @@
-import pywal, json, os, subprocess
+import json, os, subprocess
 from libqtile import bar, layout, widget, hook, qtile
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
-from qtile_extras import widget
-from qtile_extras.widget import modify
-from qtile_extras.widget.decorations import RectDecoration, BorderDecoration
 
 SUPER, ALT = "mod4", "mod1"
-PYWAL_COLORS = json.load(open(pywal.settings.CACHE_DIR+"/colors.json","rb"))
+#PYWAL_COLORS = json.load(open(pywal.settings.CACHE_DIR+"/colors.json","rb"))
 
 terminal_application = guess_terminal()
 web_browser_application = "firefox"
@@ -23,11 +20,11 @@ class VolumeControl:
         self.name = name
     @lazy.function
     def change_volume(qtile,self,percentage):
-        subprocess.Popen(["amixer", "-D","pulse","set","Master",f"{abs(percentage)}%{'-' if percentage < 0 else '+'}"])
+        subprocess.Popen(["pactl", "set-sink-volume","@DEFAULT_SINK@",f"{'-' if percentage < 0 else '+'}{abs(percentage)}%"])
         self.show_volume_notification()
 
     def get_volume(self):
-        return subprocess.Popen("""awk -F"[][]" '/Left:/ { print $2 }' <(amixer -D pulse get Master) """,shell=True,stdout=subprocess.PIPE).stdout.read().decode().strip("%\n")
+        return subprocess.Popen("""pamixer --get-volume""",shell=True,stdout=subprocess.PIPE).stdout.read().decode().strip("%\n")
   
     def show_volume_notification(self):
         subprocess.Popen(["notify-send",'-i',"audio-volume-high-symbolic",'-r',str(self.id),self.name,f"""{self.get_volume()}%"""])
@@ -35,7 +32,7 @@ class VolumeControl:
     @lazy.function
     def toggle_mute(qtile, self):
 
-        subprocess.Popen(["amixer","-D","pulse","set","Master","1+","toggle"])
+        subprocess.Popen(["pamixer -t"],shell=True)
         if self.muted:
             self.muted = False
         else:
@@ -164,10 +161,10 @@ groups = setup_groups()
 
 layouts = [
     layout.Columns(
-        border_normal=PYWAL_COLORS["special"]["background"],
-        border_focus=PYWAL_COLORS["special"]["foreground"], 
+        #        border_normal=PYWAL_COLORS["special"]["background"],
+        #border_focus=PYWAL_COLORS["special"]["foreground"], 
         border_width=4, 
-        margin=[10,10,10,10]
+        margin=[5,5,5,5]
     )
 ]
 
@@ -175,12 +172,12 @@ widget_defaults = dict(
     font="sourcecodepro",
     fontsize=11,
     border_width=4,
-    border_color=PYWAL_COLORS["special"]["foreground"],
+    #order_color=PYWAL_COLORS["special"]["foreground"],
     padding=20,
-    foreground=PYWAL_COLORS["special"]["foreground"],
-    decorations=[
-        RectDecoration(clip=True, colour=PYWAL_COLORS["special"]["background"], radius=15, filled=True, padding_y=0),
-    ]
+    #foreground=PYWAL_COLORS["special"]["foreground"],
+    #decorations=[
+    #    RectDecoration(clip=True, colour=PYWAL_COLORS["special"]["background"], radius=15, filled=True, padding_y=0),
+    #]
 )
 extension_defaults = widget_defaults.copy()
 
@@ -188,17 +185,17 @@ def setup_top_bar():
     widgets = [
              
         widget.Spacer(length=5, background="#FFFF0000", decorations=[]),
-        widget.GroupBox(highlight_method="line",highlight_color=['ff000000'], padding = 10, borderwidth=2, disable_drag=True, this_current_screen_border=PYWAL_COLORS["special"]["foreground"], active=PYWAL_COLORS["colors"]["color6"],inactive=PYWAL_COLORS["colors"]["color1"]),
-        widget.Spacer(background="#FFFF0000", decorations=[]),
-        widget.Mpris2(name="spotify", display_metadata=["xesam:title", "xesam:artist"]),
-        widget.Spacer(background="#FFFF0000", decorations=[]),
+        widget.GroupBox(highlight_method="line",highlight_color=['ff000000'], padding = 10, borderwidth=2, disable_drag=True,
+                        #this_current_screen_border=PYWAL_COLORS["special"]["foreground"], active=PYWAL_COLORS["colors"]["color6"],inactive=PYWAL_COLORS["colors"]["color1"]
+                        ),
+       widget.Spacer(background="#FFFF0000", decorations=[]),
         widget.Net(format=' {interface}: {down} ↓↑ {up}'),
         widget.Spacer(background="#FFFF0000", length=5, decorations=[]),
         widget.DF(visible_on_warn=False, format="{p} ({uf}{m}B, {r:.0f}%)"),
         widget.Spacer(length=5, background="#FFFF0000", decorations=[]),
         widget.Clock(format="%d.%m.%Y %a, %H:%M:%S"),
     ]
-    result = bar.Bar(widgets=widgets, size=32, margin=[10,10,0,10], background="#FFFF0000")
+    result = bar.Bar(widgets=widgets, size=32, margin=[5,5,0,5], background="#00000000")
     return result
 
 def setup_bottom_bar():
@@ -209,7 +206,7 @@ def setup_bottom_bar():
         widget.Spacer(length=5, background="#FF000000", decorations=[]),
         widget.QuickExit(default_text="S", countdown_format="{}", countdown_start=6),
     ]
-    result = bar.Bar(widgets=widgets, size=32, margin=[0,10,10,10], background="#00000000", opacity=1)
+    result = bar.Bar(widgets=widgets, size=32, margin=[0,5,5,5], background="#00000000", opacity=1)
     return result
 
 screens = [
@@ -232,8 +229,8 @@ bring_front_click = False
 cursor_warp = False
 
 floating_layout = layout.Floating(
-    border_normal=PYWAL_COLORS["special"]["background"],
-    border_focus=PYWAL_COLORS["special"]["foreground"], 
+   #border_normal=PYWAL_COLORS["special"]["background"],
+   # border_focus=PYWAL_COLORS["special"]["foreground"], 
     border_width=4, 
     float_rules=[
         *layout.Floating.default_float_rules,

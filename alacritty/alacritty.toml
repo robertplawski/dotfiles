@@ -1,0 +1,10 @@
+[font]
+#highlight_damage = false
+
+[font.normal]
+family = "monospace"
+style = "Regular"
+
+[window.padding]
+x = 5
+y = 5

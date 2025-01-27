@@ -6,8 +6,8 @@ osInfo[/etc/debian_version]=apt-get
 echo "https://robertplawski.pl/dot.sh"
 echo "By Robert Plawski 2025"
 echo ""
-
-dependencies="qtile picom rofi firefox git alacritty nvim"
+#cho ${SUDO_USER:-${USER}}
+dependencies="xorg lightdm lightdm-gtk-greeter qtile picom rofi firefox git alacritty nvim xrandr pamixer translate-shell xclip"
 
 if [ $(id -u) -ne 0 ]
 	then echo "Please run as root or using sudo"
@@ -31,11 +31,14 @@ do
 	if [[ "${osInfo[$]}" == "apt-get" ]]; then
 		apt-get install $dependencies -y
 	fi
+	pip install mypy stubtest
+	pip install duckduckgo-search
 	echo Downloading configuration
+	cd /tmp/
 	git clone https://github.com/robertplawski/dotfiles.git
-	echo Applying config!
-	cd dotfiles
-	cp ./* -r ~/.config
+	cp /tmp/dotfiles/* -r /home/${SUDO_USER:-${USER}}/.config
+	chown -R ${SUDO_USER:-${USER}}	/home/${SUDO_USER:-${USER}}/.config
+	echo Applying configuration
 	echo Done! Enjoy your new configured system
 	
     fi

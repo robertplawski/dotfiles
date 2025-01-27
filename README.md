@@ -16,4 +16,4 @@ beware running scripts that you don't know, ESPECIALLY WHEN THEY REQUIRE ROOT, f
 It will automatically determine which package manager you are using and personalize your system for you!
 
 ## Have fun...
-Remember to give me some feedback if you actually are crazy enough.
+Remember to give me some feedback if you actually are crazy enough to use these dotfiles.

@@ -104,7 +104,7 @@ def setup_keys(keys = []):
     screen_control = ScreenControl(2138, "Screen Control")
     window_keybindings = [
         Key([ALT], "Tab", lazy.layout.next(), desc="Move window focus to other window"),
-        Key([ALT], "F4", lazy.window.kill()),
+        Key(["control"], "Q", lazy.window.kill()),
 
         Key([SUPER, "shift"], "Left", lazy.layout.shuffle_left(), desc="Move window to the left"),
         Key([SUPER, "shift"], "Right", lazy.layout.shuffle_right(), desc="Move window to the right"),
@@ -188,9 +188,12 @@ def setup_top_bar():
         widget.GroupBox(highlight_method="line",highlight_color=['ff000000'], padding = 10, borderwidth=2, disable_drag=True,
                         #this_current_screen_border=PYWAL_COLORS["special"]["foreground"], active=PYWAL_COLORS["colors"]["color6"],inactive=PYWAL_COLORS["colors"]["color1"]
                         ),
-       widget.Spacer(background="#FFFF0000", decorations=[]),
+        widget.Spacer(backgronud="#FFFF0000", decorations=[]),
+        widget.ThermalZone(),
+        widget.Battery(battery=0),
+        widget.Battery(battery=1),
+
         widget.Net(format=' {interface}: {down} ↓↑ {up}'),
-        widget.Spacer(background="#FFFF0000", length=5, decorations=[]),
         widget.DF(visible_on_warn=False, format="{p} ({uf}{m}B, {r:.0f}%)"),
         widget.Spacer(length=5, background="#FFFF0000", decorations=[]),
         widget.Clock(format="%d.%m.%Y %a, %H:%M:%S"),

@@ -1,0 +1,33 @@
+{
+  "bar.customModules.storage.paths": [
+    "/"
+  ],
+  "theme.font.name": "Monospace",
+  "theme.font.label": "Monospace",
+  "tear": false,
+  "theme.font.size": "12px",
+  "theme.bar.menus.monochrome": false,
+  "wallpaper.image": "/home/robert/.config/hypr/wallpaper.png",
+  "wallpaper.pywal": false,
+  "theme.matugen": true,
+  "theme.matugen_settings.mode": "dark",
+  "theme.matugen_settings.scheme_type": "monochrome",
+  "theme.matugen_settings.variation": "standard_1",
+  "theme.bar.transparent": false,
+  "menus.dashboard.shortcuts.left.shortcut1.command": "firefox",
+  "menus.dashboard.shortcuts.left.shortcut1.tooltip": "Firefox",
+  "menus.dashboard.stats.enable_gpu": true,
+  "menus.clock.time.military": false,
+  "menus.clock.time.hideSeconds": false,
+  "theme.bar.outer_spacing": "10px",
+  "theme.bar.buttons.y_margins": "5px",
+  "theme.bar.floating": false,
+  "theme.bar.buttons.enableBorders": false,
+  "theme.bar.enableShadow": false,
+  "bar.workspaces.show_icons": false,
+  "bar.workspaces.monitorSpecific": false,
+  "bar.workspaces.show_numbered": false,
+  "bar.workspaces.showWsIcons": false,
+  "bar.workspaces.showApplicationIcons": false,
+  "bar.launcher.icon": ""
+}

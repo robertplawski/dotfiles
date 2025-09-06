@@ -1,0 +1,82 @@
+* {
+	font:"Source Code Pro 10";
+	text-color:white;
+	background-color:transparent;
+}
+mainbox{
+	children:[inputbar,message,listview,mode-switcher];
+}
+mode-switcher{
+	spacing:10px;
+}
+button{
+	background-color: #0f0f0f;
+	border-radius:10px;	
+	padding:10px;
+	cursor:pointer;
+}
+button selected{
+	background-color:#2f2f2f;
+}
+scrollbar{
+background-color:#0f0f0f;
+handle-color:#2f2f2f;
+border-radius:10px;
+}
+window{
+	width:24em;
+	height:19.5em;
+	background-color:rgba(0,0,0,0.9);
+	text-color:white;
+	padding:10px;
+	border-color: white;
+	border: 1px;
+	border-radius:10px;
+	transparency: "real";
+}
+entry{
+	padding:5px;
+	vertical-align:0.6;
+	placeholder: "Search...";
+}
+mainbox{
+	spacing:10px;
+}
+listview{
+	spacing:10px;
+	scrollbar:true;
+}
+inputbar{
+	children:[entry];
+}
+entry{
+	padding:10px;
+	background-color:#1f1f1f;
+	border-radius:10px;
+}
+element{
+	padding:5px;
+	border-radius:10px;
+	background-color:#0f0f0f;
+	children:[element-icon, element-text];
+	spacing:1em;
+	orientation:horizontal;
+	cursor:pointer;
+}
+element selected{
+	background-color:#2f2f2f;
+}
+element-text{
+	vertical-align:0.6;
+	cursor:pointer;
+}
+element-icon{
+	size:1.5em;
+	cursor:pointer;
+}
+configuration{
+	modes: [drun, window];
+	combi-modes: [drun, window];
+	combi-display-format: "{text}";
+}
+

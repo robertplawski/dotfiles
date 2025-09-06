@@ -1,6 +1,6 @@
 # Fedora Dev Setup Script
 
-Automates the setup of a Fedora 41 workstation for development, including:  
+Automates the setup of a Fedora workstation for development, including:  
 
 - System updates and RPM Fusion/COPR repos  
 - NVIDIA drivers  

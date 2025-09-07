@@ -15,7 +15,6 @@ sudo dnf -y upgrade
 info "Enabling COPR and RPM Fusion repositories..."
 sudo dnf -y copr enable solopasha/hyprland
 sudo dnf -y copr enable heus-sueh/packages
-sudo dnf config-manager --save --setopt=copr:copr.fedorainfracloud.org:heus-sueh:packages.priority=200
 
 sudo dnf -y install \
   https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \

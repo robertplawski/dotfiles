@@ -10,7 +10,3 @@ fi
 if [[ -z $DISPLAY ]] && [[ $(tty) == /dev/tty1 ]]; then
   exec Hyprland >"$HOME/.local/share/session-logs/hyprland-$TIMESTAMP.log" 2>&1
 fi
-
-if [[ -z $DISPLAY ]] && [[ $(tty) == /dev/tty2 ]]; then
-  exec "/home/robert/scripts/kiosk.sh" >"$HOME/.local/share/session-logs/kiosk-$TIMESTAMP.log" 2>&1
-fi

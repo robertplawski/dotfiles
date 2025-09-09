@@ -39,7 +39,7 @@ sudo dnf -y install akmod-nvidia xorg-x11-drv-nvidia-cuda || warn "NVIDIA driver
 
 # 4. Hyprland & utilities
 info "Installing Hyprland and utilities..."
-sudo dnf -y install hyprland hyprpaper hyprlock hyprshot hyprpicker hyprpanel xdg-desktop-portal-hyprland lxpolkit
+sudo dnf -y install hyprland hyprpaper hyprlock hyprshot hyprpicker hyprpanel xdg-desktop-portal-hyprland cifs-utils nfs-utils lxpolkit
 
 # 5. Multimedia apps & codecs (Feishin included)
 info "Installing multimedia codecs and apps..."
@@ -53,7 +53,7 @@ sudo dnf -y install alacritty firefox thunar qbittorrent pavucontrol thunderbird
 info "Installing development tools..."
 sudo dnf -y install \
   python3 python3-pip golang rust nodejs npm gcc gcc-c++ make cmake gdb \
-  git zsh vim neovim tmux curl wget fzf ripgrep htop tree gh
+  git zsh vim neovim tmux curl wget fzf ripgrep htop tree gh yq jq
 
 # 8. Docker
 info "Installing Docker..."

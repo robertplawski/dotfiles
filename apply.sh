@@ -16,3 +16,16 @@ fi
 
 info "Copying the configuration to .config"
 cp -r "$SCRIPT_DIR"/* "$HOME/.config/"
+
+sudo mkdir -p /backup
+while IFS= read -r line || [[ -n "$line" ]]; do
+  [[ -z "$line" || "$line" =~ ^# ]] && continue # skip empty lines/comments
+  if ! grep -Fxq "$line" /etc/fstab; then
+    echo "Adding: $line"
+    sudo bash -c "echo '$line' >> /etc/fstab"
+  fi
+done <"$SCRIPT_DIR/fstab"
+sudo systemctl daemon-reload
+sudo mount -a
+
+crontab $SCRIPT_DIR/cron.txt

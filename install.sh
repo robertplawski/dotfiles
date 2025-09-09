@@ -93,7 +93,7 @@ sudo dnf -y install code
 [ -f ./vscode-extensions.txt ] && info "Restoring VS Code extensions..." && tr ',' '\n' <~/backup/vscode-extensions.txt | xargs -I{} sh -c 'code --install-extension "{}" || warn "Failed to install extension: {}"' || warn "VS Code extensions backup not found"
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-info "Copying the configuration to .config"
-cp -ri "$SCRIPT_DIR"/* "$HOME/.config/"
+
+bash $SCRIPT_DIR/apply.sh
 
 info "Installation complete! Please reboot when possible..."

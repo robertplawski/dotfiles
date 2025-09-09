@@ -65,7 +65,7 @@ sudo dnf -y install alacritty firefox thunar qbittorrent pavucontrol thunderbird
 info "Installing development tools..."
 sudo dnf -y install \
   python3 python3-pip golang rust nodejs npm gcc gcc-c++ make cmake gdb \
-  git zsh vim neovim tmux curl wget fzf ripgrep htop tree
+  git zsh vim neovim tmux curl wget fzf ripgrep htop tree gh
 
 # 8. Docker
 info "Installing Docker..."

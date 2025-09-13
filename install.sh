@@ -33,9 +33,24 @@ info "Adding Terra repository..."
 releasever=$(rpm -E %fedora)
 sudo dnf -y install --nogpgcheck --repofrompath "terra,https://repos.fyralabs.com/terra$releasever" terra-release || warn "Terra repo failed"
 
-# 3. NVIDIA drivers
-info "Installing NVIDIA drivers..."
-sudo dnf -y install akmod-nvidia xorg-x11-drv-nvidia-cuda || warn "NVIDIA driver installation failed. Skipping..."
+ask "Do you want to install NVIDIA drivers?"
+read -r answer
+
+if [[ "$answer" =~ ^[Yy]$ ]]; then
+  info "Installing NVIDIA drivers..."
+  sudo dnf -y install akmod-nvidia xorg-x11-drv-nvidia-cuda || warn "NVIDIA driver installation failed. Skipping..."
+  sudo wget https://developer.download.nvidia.com/compute/cuda/repos/fedora42/x86_64/cuda-fedora42.repo -O /etc/yum.repos.d/cuda-fedora42.repo
+  sudo dnf -y install cuda
+  sudo dnf install -y nvidia-docker2
+  sudo dnf install -y nvidia-container-toolkit
+
+  echo 'export PATH=/usr/local/cuda/bin:$PATH' >>~/.bashrc
+  echo 'export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH' >>~/.bashrc
+  source ~/.bashrc
+
+else
+  info "Skipping nvidia drivers install"
+fi
 
 # 4. Hyprland & utilities
 info "Installing Hyprland and utilities..."
@@ -56,7 +71,7 @@ if [[ "$answer" =~ ^[Yy]$ ]]; then
   echo "Installing snaps..."
   sudo dnf install snapd
   sudo systemctl enable --now snapd.socket
-  sudo ln -s /var/lib/snapd/snap /snap
+  sudo ln -s /var/lib/snapd/snap /snap || warn "Failure creating snap link / maybe already installed..."
   sudo snap install android-studio
   sudo snap install slack
   sudo snap install bruno

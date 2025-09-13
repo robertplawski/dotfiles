@@ -1,0 +1,195 @@
+12:34:05.856: [Safe Mode] Unclean shutdown detected!
+12:34:08.024: [Safe Mode] User elected to launch normally.
+12:34:08.025: Platform: Wayland
+12:34:08.025: CPU Name: AMD Ryzen 5 8600G w/ Radeon 760M Graphics
+12:34:08.025: CPU Speed: 4349.581MHz
+12:34:08.025: Physical Cores: 12, Logical Cores: 12
+12:34:08.026: Physical Memory: 11908MB Total, 1919MB Free
+12:34:08.026: Kernel Version: Linux 6.15.8-100.fc41.x86_64
+12:34:08.026: Flatpak Branch: stable
+12:34:08.026: Flatpak Arch: x86_64
+12:34:08.026: Flatpak Runtime: runtime/org.kde.Platform/x86_64/6.6
+12:34:08.026: App Extensions:
+12:34:08.026:  - com.obsproject.Studio.Locale
+12:34:08.026: Runtime Extensions:
+12:34:08.026:  - org.freedesktop.Platform.GL.default
+12:34:08.026:  - org.freedesktop.Platform.GL.nvidia-575-64-03
+12:34:08.026:  - org.freedesktop.Platform.openh264
+12:34:08.026:  - org.gtk.Gtk3theme.Adwaita-dark
+12:34:08.026:  - org.gtk.Gtk3theme.Materia-dark-compact
+12:34:08.026:  - org.kde.KStyle.Adwaita
+12:34:08.026:  - org.kde.Platform.Locale
+12:34:08.026:  - org.freedesktop.Platform.GL.default
+12:34:08.026: Flatpak Framework Version: 1.16.1
+12:34:08.026: Desktop Environment: Hyprland
+12:34:08.026: Session Type: wayland
+12:34:08.027: Qt Version: 6.6.3 (runtime), 6.6.3 (compiled)
+12:34:08.027: Portable mode: false
+12:34:08.049: OBS 31.0.3 (linux)
+12:34:08.050: ---------------------------------
+12:34:08.050: ---------------------------------
+12:34:08.051: audio settings reset:
+12:34:08.051: 	samples per sec: 48000
+12:34:08.051: 	speakers:        2
+12:34:08.051: 	max buffering:   960 milliseconds
+12:34:08.051: 	buffering type:  dynamically increasing
+12:34:08.051: ---------------------------------
+12:34:08.051: Initializing OpenGL...
+12:34:08.051: Using EGL/Wayland
+12:34:08.051: Initialized EGL 1.5
+12:34:08.128: Loading up OpenGL on adapter NVIDIA Corporation NVIDIA GeForce RTX 2060/PCIe/SSE2
+12:34:08.128: OpenGL loaded successfully, version 3.3.0 NVIDIA 575.64.03, shading language 3.30 NVIDIA via Cg compiler
+12:34:08.144: ---------------------------------
+12:34:08.144: video settings reset:
+12:34:08.144: 	base resolution:   1920x1080
+12:34:08.144: 	output resolution: 1920x1080
+12:34:08.144: 	downscale filter:  Bicubic
+12:34:08.144: 	fps:               30/1
+12:34:08.144: 	format:            NV12
+12:34:08.144: 	YUV mode:          Rec. 709/Partial
+12:34:08.144: NV12 texture support enabled
+12:34:08.144: P010 texture support not available
+12:34:08.144: Audio monitoring device:
+12:34:08.144: 	name: TU106 High Definition Audio Controller Digital Stereo (HDMI)
+12:34:08.144: 	id: alsa_output.pci-0000_01_00.1.hdmi-stereo
+12:34:08.145: ---------------------------------
+12:34:08.156: No AJA devices found, skipping loading AJA UI plugin
+12:34:08.156: Failed to initialize module 'aja-output-ui.so'
+12:34:08.167: No AJA devices found, skipping loading AJA plugin
+12:34:08.167: Failed to initialize module 'aja.so'
+12:34:08.317: [pipewire] Available capture sources:
+12:34:08.317: [pipewire]     - Monitor source
+12:34:08.317: [pipewire]     - Window source
+12:34:08.338: [obs-browser]: Version 2.24.6
+12:34:08.338: [obs-browser]: CEF Version 127.0.6533.120 (runtime), 127.0.0-6533-fix-stutter.3039+g9d68db8+chromium-127.0.6533.120 (compiled)
+12:34:08.344: VAAPI: Failed to initialize display in vaapi_device_h264_supported
+12:34:08.344: FFmpeg VAAPI H264 encoding not supported
+12:34:08.344: VAAPI: Failed to initialize display in vaapi_device_av1_supported
+12:34:08.344: FFmpeg VAAPI AV1 encoding not supported
+12:34:08.345: VAAPI: Failed to initialize display in vaapi_device_hevc_supported
+12:34:08.345: FFmpeg VAAPI HEVC encoding not supported
+12:34:08.865: [obs-nvenc] NVENC version: 12.2 (compiled) / 13.0 (driver), CUDA driver version: 12.90, AV1 supported: false
+12:34:08.909: [obs-websocket] [obs_module_load] you can haz websockets (Version: 5.5.6 | RPC Version: 1)
+12:34:08.909: [obs-websocket] [obs_module_load] Qt version (compile-time): 6.6.3 | Qt version (run-time): 6.6.3
+12:34:08.909: [obs-websocket] [obs_module_load] Linked ASIO Version: 103100
+12:34:08.909: DEPRECATION: obs_frontend_get_global_config is deprecated. Read from global or user configuration explicitly instead.
+12:34:08.913: [obs-websocket] [obs_module_load] Module loaded.
+12:34:08.945: ---------------------------------
+12:34:08.945:   Loaded Modules:
+12:34:08.945:     text-freetype2.so
+12:34:08.945:     rtmp-services.so
+12:34:08.945:     obs-x264.so
+12:34:08.945:     obs-websocket.so
+12:34:08.945:     obs-webrtc.so
+12:34:08.945:     obs-vst.so
+12:34:08.945:     obs-transitions.so
+12:34:08.945:     obs-qsv11.so
+12:34:08.945:     obs-outputs.so
+12:34:08.946:     obs-nvenc.so
+12:34:08.946:     obs-libfdk.so
+12:34:08.946:     obs-filters.so
+12:34:08.946:     obs-ffmpeg.so
+12:34:08.946:     obs-browser.so
+12:34:08.946:     linux-v4l2.so
+12:34:08.946:     linux-pulseaudio.so
+12:34:08.946:     linux-pipewire.so
+12:34:08.946:     linux-jack.so
+12:34:08.946:     linux-capture.so
+12:34:08.946:     image-source.so
+12:34:08.946:     frontend-tools.so
+12:34:08.946: ---------------------------------
+12:34:08.946: ---------------------------------
+12:34:08.946: Available Encoders:
+12:34:08.946:   Video Encoders:
+12:34:08.946: 	- ffmpeg_svt_av1 (SVT-AV1)
+12:34:08.946: 	- ffmpeg_aom_av1 (AOM AV1)
+12:34:08.946: 	- obs_nvenc_h264_tex (NVIDIA NVENC H.264)
+12:34:08.946: 	- obs_nvenc_hevc_tex (NVIDIA NVENC HEVC)
+12:34:08.946: 	- obs_x264 (x264)
+12:34:08.946:   Audio Encoders:
+12:34:08.946: 	- ffmpeg_aac (FFmpeg AAC)
+12:34:08.946: 	- ffmpeg_opus (FFmpeg Opus)
+12:34:08.946: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+12:34:08.946: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+12:34:08.946: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+12:34:08.946: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+12:34:08.946: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+12:34:08.946: 	- libfdk_aac (libfdk AAC)
+12:34:08.946: ==== Startup complete ===============================================
+12:34:08.990: All scene data cleared
+12:34:08.990: ------------------------------------------------
+12:34:08.996: pulse-input: Server name: 'PulseAudio (on PipeWire 1.2.8) 15.0.0'
+12:34:08.996: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+12:34:08.996: pulse-input: Started recording from 'alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo.monitor' (default)
+12:34:08.996: [Loaded global audio device]: 'Desktop Audio'
+12:34:08.996: pulse-input: Server name: 'PulseAudio (on PipeWire 1.2.8) 15.0.0'
+12:34:08.997: pulse-input: Audio format: s16le, 48000 Hz, 1 channels
+12:34:08.997: pulse-input: Started recording from 'alsa_input.usb-Jieli_Technology_USB_Composite_Device_433130393139312E-00.mono-fallback'
+12:34:08.997: [Loaded global audio device]: 'Mic/Aux'
+12:34:08.997: v4l2-input: Start capture from /dev/video1
+12:34:08.997: v4l2-input: Unable to open device
+12:34:08.997: v4l2-input: Initialization failed, errno: No such file or directory
+12:34:08.998: Source ID 'background_removal' not found
+12:34:08.998: Failed to create source 'Background Removal'!
+12:34:08.998: Source ID 'xshm_input_v2' not found
+12:34:08.998: Failed to create source 'Display Capture (XSHM)'!
+12:34:09.031: PipeWire initialized
+12:34:09.031: v4l2-input: Start capture from /dev/video2
+12:34:09.032: v4l2-input: Unable to set input 0
+12:34:09.032: v4l2-input: Initialization failed, errno: Device or resource busy
+12:34:09.033: Switched to scene 'Scene 3'
+12:34:09.033: ------------------------------------------------
+12:34:09.033: Loaded scenes:
+12:34:09.033: - scene 'Scene 3':
+12:34:09.033:     - source: 'Display Capture (XSHM)' (xshm_input_v2)
+12:34:09.033:     - source: 'Screen Capture (PipeWire) 2' (pipewire-screen-capture-source)
+12:34:09.033:     - source: 'Video Capture Device (V4L2) 2' (v4l2_input)
+12:34:09.033: - scene 'Scene':
+12:34:09.033:     - source: 'Display Capture (XSHM)' (xshm_input_v2)
+12:34:09.033:     - source: 'Camera' (group)
+12:34:09.033:         - source: 'Text (FreeType 2)' (text_ft2_source_v2)
+12:34:09.033:     - source: 'Video Capture Device (V4L2)' (v4l2_input)
+12:34:09.033:         - filter: 'Crop/Pad' (crop_filter)
+12:34:09.033:         - filter: 'Background Removal' (background_removal)
+12:34:09.033: - scene 'Scene 4':
+12:34:09.033:     - source: 'Image' (image_source)
+12:34:09.033:     - source: 'Video Capture Device (V4L2)' (v4l2_input)
+12:34:09.033:         - filter: 'Crop/Pad' (crop_filter)
+12:34:09.033:         - filter: 'Background Removal' (background_removal)
+12:34:09.033: ------------------------------------------------
+12:34:09.080: [pipewire] Screencast session created
+12:34:09.587: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Desktop Audio)
+12:34:09.587: 
+12:34:10.409: [pipewire] Asking for monitor and window
+12:34:10.412: [pipewire] source selected, setting up screencast
+12:34:10.417: [pipewire] Server version: 1.2.8
+12:34:10.417: [pipewire] Library version: 0.3.83
+12:34:10.417: [pipewire] Header version: 0.3.83
+12:34:10.418: [pipewire] Created stream 0x55e4f7501620
+12:34:10.418: [pipewire] Stream 0x55e4f7501620 state: "connecting" (error: none)
+12:34:10.418: [pipewire] Playing stream 0x55e4f7501620
+12:34:10.418: [pipewire] Stream 0x55e4f7501620 state: "paused" (error: none)
+12:34:10.431: [pipewire] Negotiated format:
+12:34:10.431: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+12:34:10.431: [pipewire]     Modifier: 0x0
+12:34:10.431: [pipewire]     Size: 1920x1080
+12:34:10.431: [pipewire]     Framerate: 0/1
+12:34:10.431: [pipewire] Negotiated format:
+12:34:10.431: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+12:34:10.431: [pipewire]     Modifier: 0x300000000e08014
+12:34:10.431: [pipewire]     Size: 1920x1080
+12:34:10.431: [pipewire]     Framerate: 0/1
+12:34:10.432: [pipewire] Stream 0x55e4f7501620 state: "streaming" (error: none)
+12:34:16.126: v4l2-input: /dev/video3 seems to not support video capture
+12:34:16.127: v4l2-input: Found device 'GENERAL WEBCAM: GENERAL WEBCAM' at /dev/video2
+12:34:16.127: v4l2-input: /dev/video0 seems to not support video capture
+12:34:16.128: v4l2-input: Stepwise and Continuous framerates are currently hardcoded
+12:34:16.129: v4l2-input: Stepwise and Continuous framerates are currently hardcoded
+12:34:16.129: v4l2-input: Pixelformat: Motion-JPEG (available)
+12:34:16.129: v4l2-input: Pixelformat: YUYV 4:2:2 (available)
+12:34:16.129: v4l2-input: Pixelformat: RGB3 (Emulated) (unavailable)
+12:34:16.129: v4l2-input: Pixelformat: BGR3 (Emulated) (available)
+12:34:16.129: v4l2-input: Pixelformat: YU12 (Emulated) (available)
+12:34:16.129: v4l2-input: Pixelformat: YV12 (Emulated) (available)
+12:34:16.130: v4l2-input: Stepwise and Continuous framerates are currently hardcoded
+12:34:16.130: v4l2-input: Found input 'Camera 1' (Index 0)

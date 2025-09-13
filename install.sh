@@ -47,8 +47,58 @@ sudo dnf -y install x265 x265-libs x265-devel ffmpeg mpv
 
 # 6. Basic applications
 info "Installing basic applications..."
-sudo dnf -y install alacritty firefox thunar qbittorrent pavucontrol thunderbird discord
+sudo dnf -y install alacritty firefox thunar xarchiver thunar-archive-plugin qbittorrent pavucontrol audacity cheese gimp vlc krita libreoffice mpv thunderbird discord
 
+ask "Do you want to install snaps"
+read -r answer
+
+if [[ "$answer" =~ ^[Yy]$ ]]; then
+  echo "Installing snaps..."
+  sudo dnf install snapd
+  sudo systemctl enable --now snapd.socket
+  sudo ln -s /var/lib/snapd/snap /snap
+  sudo snap install android-studio
+  sudo snap install slack
+  sudo snap install bruno
+  sudo snap install upscayl
+else
+  echo "Skipping snap installation."
+fi
+
+ask "Do you want to install flatpaks "
+read -r answer
+
+if [[ "$answer" =~ ^[Yy]$ ]]; then
+
+  info "Installing flatpak and apps..."
+  sudo dnf install flatpak
+  sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+  flatpak install flathub com.obsproject.Studio -y
+  flatpak install flathub com.obsproject.Studio.Plugin.BackgroundRemoval -y
+  flatpak install flathub dev.lizardbyte.app.Sunshine -y
+  flatpak install flathub com.moonlight_stream.Moonlight -y
+  flatpak install flathub io.github.streetpea.Chiaki4deck -y
+  flatpak install flathub org.prismlauncher.PrismLauncher -y
+  flatpak install flathub org.vinegarhq.Sober -y
+  flatpak install flathub io.github.qwersyk.Newelle -y
+  flatpak install flathub com.stremio.Stremio -y
+
+else
+  info "Skipping flatpak installation."
+fi
+
+ask "Do you want to game on this system?"
+read -r answer
+
+if [[ "$answer" =~ ^[Yy]$ ]]; then
+
+  sudo dnf install -y retroarch lutris wine winetricks protontricks
+  sudo dnf install -y $(curl -s https://api.github.com/repos/Open-Wine-Components/umu-launcher/releases/latest | grep -oP '"browser_download_url": "\K.*umu-launcher-.*\.rpm' | head -n1)
+  sudo dnf install -y $(curl -s https://api.github.com/repos/hydralauncher/hydra/releases/latest | grep -oP '"browser_download_url": "\K.*hydralauncher-.*\.rpm' | head -n1)
+
+else
+  info "Skipping game media installation"
+fi
 # 7. Development tools & programming languages
 info "Installing development tools..."
 sudo dnf -y install \

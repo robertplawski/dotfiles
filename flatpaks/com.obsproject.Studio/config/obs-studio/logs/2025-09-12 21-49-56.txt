@@ -1,0 +1,1059 @@
+21:49:56.456: Platform: Wayland
+21:49:56.456: CPU Name: AMD Ryzen 5 8600G w/ Radeon 760M Graphics
+21:49:56.456: CPU Speed: 4349.616MHz
+21:49:56.456: Physical Cores: 12, Logical Cores: 12
+21:49:56.456: Physical Memory: 11908MB Total, 2213MB Free
+21:49:56.456: Kernel Version: Linux 6.15.8-100.fc41.x86_64
+21:49:56.456: Flatpak Branch: stable
+21:49:56.457: Flatpak Arch: x86_64
+21:49:56.457: Flatpak Runtime: runtime/org.kde.Platform/x86_64/6.6
+21:49:56.457: App Extensions:
+21:49:56.457:  - com.obsproject.Studio.Plugin.BackgroundRemoval
+21:49:56.457:  - com.obsproject.Studio.Locale
+21:49:56.457: Runtime Extensions:
+21:49:56.457:  - org.freedesktop.Platform.GL.default
+21:49:56.457:  - org.freedesktop.Platform.GL.nvidia-575-64-03
+21:49:56.457:  - org.freedesktop.Platform.openh264
+21:49:56.457:  - org.gtk.Gtk3theme.Adwaita-dark
+21:49:56.457:  - org.gtk.Gtk3theme.Materia-dark-compact
+21:49:56.457:  - org.kde.KStyle.Adwaita
+21:49:56.457:  - org.kde.Platform.Locale
+21:49:56.457:  - org.freedesktop.Platform.GL.default
+21:49:56.457: Flatpak Framework Version: 1.16.1
+21:49:56.457: Desktop Environment: Hyprland
+21:49:56.457: Session Type: wayland
+21:49:56.458: Qt Version: 6.6.3 (runtime), 6.6.3 (compiled)
+21:49:56.458: Portable mode: false
+21:49:56.487: OBS 31.0.3 (linux)
+21:49:56.487: ---------------------------------
+21:49:56.488: ---------------------------------
+21:49:56.488: audio settings reset:
+21:49:56.488: 	samples per sec: 48000
+21:49:56.488: 	speakers:        2
+21:49:56.488: 	max buffering:   960 milliseconds
+21:49:56.488: 	buffering type:  dynamically increasing
+21:49:56.489: ---------------------------------
+21:49:56.489: Initializing OpenGL...
+21:49:56.489: Using EGL/Wayland
+21:49:56.520: Initialized EGL 1.5
+21:49:56.575: Loading up OpenGL on adapter NVIDIA Corporation NVIDIA GeForce RTX 2060/PCIe/SSE2
+21:49:56.575: OpenGL loaded successfully, version 3.3.0 NVIDIA 575.64.03, shading language 3.30 NVIDIA via Cg compiler
+21:49:56.592: ---------------------------------
+21:49:56.592: video settings reset:
+21:49:56.592: 	base resolution:   1920x1080
+21:49:56.592: 	output resolution: 1920x1080
+21:49:56.592: 	downscale filter:  Bicubic
+21:49:56.592: 	fps:               30/1
+21:49:56.592: 	format:            NV12
+21:49:56.592: 	YUV mode:          Rec. 709/Partial
+21:49:56.592: NV12 texture support enabled
+21:49:56.592: P010 texture support not available
+21:49:56.592: Audio monitoring device:
+21:49:56.592: 	name: TU106 High Definition Audio Controller Digital Stereo (HDMI)
+21:49:56.592: 	id: alsa_output.pci-0000_01_00.1.hdmi-stereo
+21:49:56.593: ---------------------------------
+21:49:56.605: No AJA devices found, skipping loading AJA UI plugin
+21:49:56.605: Failed to initialize module 'aja-output-ui.so'
+21:49:56.615: No AJA devices found, skipping loading AJA plugin
+21:49:56.615: Failed to initialize module 'aja.so'
+21:49:56.751: [pipewire] Available capture sources:
+21:49:56.751: [pipewire]     - Monitor source
+21:49:56.751: [pipewire]     - Window source
+21:49:56.771: [obs-browser]: Version 2.24.6
+21:49:56.771: [obs-browser]: CEF Version 127.0.6533.120 (runtime), 127.0.0-6533-fix-stutter.3039+g9d68db8+chromium-127.0.6533.120 (compiled)
+21:49:56.778: VAAPI: Failed to initialize display in vaapi_device_h264_supported
+21:49:56.778: FFmpeg VAAPI H264 encoding not supported
+21:49:56.778: VAAPI: Failed to initialize display in vaapi_device_av1_supported
+21:49:56.778: FFmpeg VAAPI AV1 encoding not supported
+21:49:56.778: VAAPI: Failed to initialize display in vaapi_device_hevc_supported
+21:49:56.778: FFmpeg VAAPI HEVC encoding not supported
+21:49:57.307: [obs-nvenc] NVENC version: 12.2 (compiled) / 13.0 (driver), CUDA driver version: 12.90, AV1 supported: false
+21:49:57.352: [obs-websocket] [obs_module_load] you can haz websockets (Version: 5.5.6 | RPC Version: 1)
+21:49:57.353: [obs-websocket] [obs_module_load] Qt version (compile-time): 6.6.3 | Qt version (run-time): 6.6.3
+21:49:57.353: [obs-websocket] [obs_module_load] Linked ASIO Version: 103100
+21:49:57.353: DEPRECATION: obs_frontend_get_global_config is deprecated. Read from global or user configuration explicitly instead.
+21:49:57.356: [obs-websocket] [obs_module_load] Module loaded.
+21:49:57.396: [obs-backgroundremoval] Plugin loaded successfully (version 1.1.13)
+21:49:57.396: [obs-backgroundremoval] Failed to open config file /home/robert/.var/app/com.obsproject.Studio/config/obs-studio/plugin_config/obs-backgroundremoval/config.ini
+21:49:57.396: [obs-backgroundremoval] Failed to open config file /home/robert/.var/app/com.obsproject.Studio/config/obs-studio/plugin_config/obs-backgroundremoval/config.ini
+21:49:57.784: [obs-backgroundremoval] Latest release is 
+21:49:57.784: ---------------------------------
+21:49:57.784:   Loaded Modules:
+21:49:57.784:     obs-backgroundremoval.so
+21:49:57.784:     text-freetype2.so
+21:49:57.784:     rtmp-services.so
+21:49:57.784:     obs-x264.so
+21:49:57.784:     obs-websocket.so
+21:49:57.784:     obs-webrtc.so
+21:49:57.784:     obs-vst.so
+21:49:57.784:     obs-transitions.so
+21:49:57.784:     obs-qsv11.so
+21:49:57.784:     obs-outputs.so
+21:49:57.784:     obs-nvenc.so
+21:49:57.784:     obs-libfdk.so
+21:49:57.784:     obs-filters.so
+21:49:57.784:     obs-ffmpeg.so
+21:49:57.784:     obs-browser.so
+21:49:57.784:     linux-v4l2.so
+21:49:57.784:     linux-pulseaudio.so
+21:49:57.784:     linux-pipewire.so
+21:49:57.784:     linux-jack.so
+21:49:57.784:     linux-capture.so
+21:49:57.784:     image-source.so
+21:49:57.784:     frontend-tools.so
+21:49:57.784: ---------------------------------
+21:49:57.784: ---------------------------------
+21:49:57.784: Available Encoders:
+21:49:57.784:   Video Encoders:
+21:49:57.784: 	- ffmpeg_svt_av1 (SVT-AV1)
+21:49:57.784: 	- ffmpeg_aom_av1 (AOM AV1)
+21:49:57.784: 	- obs_nvenc_h264_tex (NVIDIA NVENC H.264)
+21:49:57.784: 	- obs_nvenc_hevc_tex (NVIDIA NVENC HEVC)
+21:49:57.784: 	- obs_x264 (x264)
+21:49:57.784:   Audio Encoders:
+21:49:57.784: 	- ffmpeg_aac (FFmpeg AAC)
+21:49:57.784: 	- ffmpeg_opus (FFmpeg Opus)
+21:49:57.784: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+21:49:57.784: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+21:49:57.784: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+21:49:57.784: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+21:49:57.784: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+21:49:57.784: 	- libfdk_aac (libfdk AAC)
+21:49:57.784: ==== Startup complete ===============================================
+21:49:57.834: All scene data cleared
+21:49:57.834: ------------------------------------------------
+21:49:57.839: pulse-input: Server name: 'PulseAudio (on PipeWire 1.2.8) 15.0.0'
+21:49:57.840: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+21:49:57.840: pulse-input: Started recording from 'alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo.monitor' (default)
+21:49:57.840: [Loaded global audio device]: 'Desktop Audio'
+21:49:57.840: pulse-input: Server name: 'PulseAudio (on PipeWire 1.2.8) 15.0.0'
+21:49:57.840: pulse-input: An error occurred while getting the source info!
+21:49:57.840: [Loaded global audio device]: 'Mic/Aux'
+21:49:57.841: v4l2-input: Start capture from /dev/video1
+21:49:57.841: v4l2-input: Input: 0
+21:49:57.845: v4l2-input: Resolution: 1280x720
+21:49:57.845: v4l2-input: Pixelformat: YUYV
+21:49:57.845: v4l2-input: Linesize: 2560 Bytes
+21:49:57.845: v4l2-input: Framerate: 30.00 fps
+21:49:57.846: v4l2-input: /dev/video1: select timeout set to 166666 (5x frame periods)
+21:49:57.848: [obs-backgroundremoval] Background filter created
+21:49:57.855: [obs-backgroundremoval] Background filter updated
+21:49:57.856: [obs-backgroundremoval] /onnxruntime_src/onnxruntime/core/session/provider_bridge_ort.cc:1209 onnxruntime::Provider& onnxruntime::ProviderLibrary::Get() [ONNXRuntimeError] : 1 : FAIL : Failed to load library libonnxruntime_providers_tensorrt.so with error: libcudnn.so.8: cannot open shared object file: No such file or directory
+21:49:57.856: 
+21:49:57.856: [obs-backgroundremoval] Failed to create ONNXRuntime session. Error code: 5
+21:49:57.856: Source ID 'xshm_input_v2' not found
+21:49:57.856: Failed to create source 'Display Capture (XSHM)'!
+21:49:57.885: PipeWire initialized
+21:49:57.886: Switched to scene 'Scene 3'
+21:49:57.886: ------------------------------------------------
+21:49:57.886: Loaded scenes:
+21:49:57.886: - scene 'Scene 3':
+21:49:57.886:     - source: 'Display Capture (XSHM)' (xshm_input_v2)
+21:49:57.886:     - source: 'Screen Capture (PipeWire) 2' (pipewire-screen-capture-source)
+21:49:57.886:     - source: 'Video Capture Device (V4L2)' (v4l2_input)
+21:49:57.886:         - filter: 'Crop/Pad' (crop_filter)
+21:49:57.886:         - filter: 'Background Removal' (background_removal)
+21:49:57.886: - scene 'Scene':
+21:49:57.886:     - source: 'Display Capture (XSHM)' (xshm_input_v2)
+21:49:57.886:     - source: 'Camera' (group)
+21:49:57.886:         - source: 'Text (FreeType 2)' (text_ft2_source_v2)
+21:49:57.886:     - source: 'Video Capture Device (V4L2)' (v4l2_input)
+21:49:57.886:         - filter: 'Crop/Pad' (crop_filter)
+21:49:57.886:         - filter: 'Background Removal' (background_removal)
+21:49:57.886: - scene 'Scene 4':
+21:49:57.886:     - source: 'Image' (image_source)
+21:49:57.886:     - source: 'Video Capture Device (V4L2)' (v4l2_input)
+21:49:57.886:         - filter: 'Crop/Pad' (crop_filter)
+21:49:57.886:         - filter: 'Background Removal' (background_removal)
+21:49:57.886: ------------------------------------------------
+21:49:57.896: [obs-backgroundremoval] Background filter activated
+21:49:57.896: [obs-backgroundremoval] Model is not initialized
+21:49:57.926: [obs-backgroundremoval] Model is not initialized
+21:49:57.932: [pipewire] Screencast session created
+21:49:57.942: [pipewire] Asking for monitor and window
+21:49:57.961: [obs-backgroundremoval] Model is not initialized
+21:49:57.962: [pipewire] source selected, setting up screencast
+21:49:57.969: [pipewire] Server version: 1.2.8
+21:49:57.969: [pipewire] Library version: 0.3.83
+21:49:57.969: [pipewire] Header version: 0.3.83
+21:49:58.005: [pipewire] Created stream 0x55992c956c60
+21:49:58.005: [pipewire] Stream 0x55992c956c60 state: "connecting" (error: none)
+21:49:58.005: [pipewire] Playing stream 0x55992c956c60
+21:49:58.005: [obs-backgroundremoval] Model is not initialized
+21:49:58.006: [pipewire] Stream 0x55992c956c60 state: "paused" (error: none)
+21:49:58.013: [pipewire] Negotiated format:
+21:49:58.013: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+21:49:58.013: [pipewire]     Modifier: 0x0
+21:49:58.013: [pipewire]     Size: 1920x1080
+21:49:58.013: [pipewire]     Framerate: 0/1
+21:49:58.014: [pipewire] Negotiated format:
+21:49:58.014: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+21:49:58.014: [pipewire]     Modifier: 0x300000000e08014
+21:49:58.014: [pipewire]     Size: 1920x1080
+21:49:58.014: [pipewire]     Framerate: 0/1
+21:49:58.015: [pipewire] Stream 0x55992c956c60 state: "streaming" (error: none)
+21:49:58.026: [obs-backgroundremoval] Model is not initialized
+21:49:58.066: [obs-backgroundremoval] Model is not initialized
+21:49:58.092: [obs-backgroundremoval] Model is not initialized
+21:49:58.116: v4l2-input: /dev/video1: select timed out
+21:49:58.116: v4l2-input: /dev/video1: failed to log status
+21:49:58.126: [obs-backgroundremoval] Model is not initialized
+21:49:58.159: [obs-backgroundremoval] Model is not initialized
+21:49:58.192: [obs-backgroundremoval] Model is not initialized
+21:49:58.226: [obs-backgroundremoval] Model is not initialized
+21:49:58.259: [obs-backgroundremoval] Model is not initialized
+21:49:58.283: v4l2-input: /dev/video1: select timed out
+21:49:58.283: v4l2-input: /dev/video1: failed to log status
+21:49:58.292: [obs-backgroundremoval] Model is not initialized
+21:49:58.326: [obs-backgroundremoval] Model is not initialized
+21:49:58.359: [obs-backgroundremoval] Model is not initialized
+21:49:58.392: [obs-backgroundremoval] Model is not initialized
+21:49:58.426: [obs-backgroundremoval] Model is not initialized
+21:49:58.430: adding 42 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Desktop Audio)
+21:49:58.430: 
+21:49:58.450: v4l2-input: /dev/video1: select timed out
+21:49:58.450: v4l2-input: /dev/video1: failed to log status
+21:49:58.459: [obs-backgroundremoval] Model is not initialized
+21:49:58.492: [obs-backgroundremoval] Model is not initialized
+21:49:58.526: [obs-backgroundremoval] Model is not initialized
+21:49:58.559: [obs-backgroundremoval] Model is not initialized
+21:49:58.592: [obs-backgroundremoval] Model is not initialized
+21:49:58.626: [obs-backgroundremoval] Model is not initialized
+21:49:58.659: [obs-backgroundremoval] Model is not initialized
+21:49:58.692: [obs-backgroundremoval] Model is not initialized
+21:49:58.726: [obs-backgroundremoval] Model is not initialized
+21:49:58.759: [obs-backgroundremoval] Model is not initialized
+21:49:58.792: [obs-backgroundremoval] Model is not initialized
+21:49:58.826: [obs-backgroundremoval] Model is not initialized
+21:49:58.859: [obs-backgroundremoval] Model is not initialized
+21:49:58.892: [obs-backgroundremoval] Model is not initialized
+21:49:58.926: [obs-backgroundremoval] Model is not initialized
+21:49:58.959: [obs-backgroundremoval] Model is not initialized
+21:49:58.992: [obs-backgroundremoval] Model is not initialized
+21:49:59.026: [obs-backgroundremoval] Model is not initialized
+21:49:59.059: [obs-backgroundremoval] Model is not initialized
+21:49:59.092: [obs-backgroundremoval] Model is not initialized
+21:49:59.126: [obs-backgroundremoval] Model is not initialized
+21:49:59.159: [obs-backgroundremoval] Model is not initialized
+21:49:59.192: [obs-backgroundremoval] Model is not initialized
+21:49:59.226: [obs-backgroundremoval] Model is not initialized
+21:49:59.259: [obs-backgroundremoval] Model is not initialized
+21:49:59.292: [obs-backgroundremoval] Model is not initialized
+21:49:59.326: [obs-backgroundremoval] Model is not initialized
+21:49:59.359: [obs-backgroundremoval] Model is not initialized
+21:49:59.392: [obs-backgroundremoval] Model is not initialized
+21:49:59.426: [obs-backgroundremoval] Model is not initialized
+21:49:59.459: [obs-backgroundremoval] Model is not initialized
+21:49:59.992: Last log entry repeated for 15 more lines
+21:49:59.992: [obs-backgroundremoval] Model is not initialized
+21:50:00.026: [obs-backgroundremoval] Model is not initialized
+21:50:00.059: [obs-backgroundremoval] Model is not initialized
+21:50:00.092: [obs-backgroundremoval] Model is not initialized
+21:50:00.126: [obs-backgroundremoval] Model is not initialized
+21:50:00.159: [obs-backgroundremoval] Model is not initialized
+21:50:00.192: [obs-backgroundremoval] Model is not initialized
+21:50:00.226: [obs-backgroundremoval] Model is not initialized
+21:50:00.259: [obs-backgroundremoval] Model is not initialized
+21:50:00.292: [obs-backgroundremoval] Model is not initialized
+21:50:00.326: [obs-backgroundremoval] Model is not initialized
+21:50:00.359: [obs-backgroundremoval] Model is not initialized
+21:50:00.392: [obs-backgroundremoval] Model is not initialized
+21:50:00.426: [obs-backgroundremoval] Model is not initialized
+21:50:00.459: [obs-backgroundremoval] Model is not initialized
+21:50:00.492: [obs-backgroundremoval] Model is not initialized
+21:50:00.526: [obs-backgroundremoval] Model is not initialized
+21:50:00.559: [obs-backgroundremoval] Model is not initialized
+21:50:00.592: [obs-backgroundremoval] Model is not initialized
+21:50:00.626: [obs-backgroundremoval] Model is not initialized
+21:50:00.659: [obs-backgroundremoval] Model is not initialized
+21:50:00.692: [obs-backgroundremoval] Model is not initialized
+21:50:00.726: [obs-backgroundremoval] Model is not initialized
+21:50:00.759: [obs-backgroundremoval] Model is not initialized
+21:50:00.792: [obs-backgroundremoval] Model is not initialized
+21:50:00.826: [obs-backgroundremoval] Model is not initialized
+21:50:00.859: [obs-backgroundremoval] Model is not initialized
+21:50:00.892: [obs-backgroundremoval] Model is not initialized
+21:50:00.926: [obs-backgroundremoval] Model is not initialized
+21:50:00.959: [obs-backgroundremoval] Model is not initialized
+21:50:00.992: [obs-backgroundremoval] Model is not initialized
+21:50:01.026: [obs-backgroundremoval] Model is not initialized
+21:50:01.059: [obs-backgroundremoval] Model is not initialized
+21:50:01.092: [obs-backgroundremoval] Model is not initialized
+21:50:01.126: [obs-backgroundremoval] Model is not initialized
+21:50:01.159: [obs-backgroundremoval] Model is not initialized
+21:50:01.192: [obs-backgroundremoval] Model is not initialized
+21:50:01.226: [obs-backgroundremoval] Model is not initialized
+21:50:01.526: Last log entry repeated for 8 more lines
+21:50:01.526: [obs-backgroundremoval] Model is not initialized
+21:50:01.559: [obs-backgroundremoval] Model is not initialized
+21:50:01.592: [obs-backgroundremoval] Model is not initialized
+21:50:01.626: [obs-backgroundremoval] Model is not initialized
+21:50:01.659: [obs-backgroundremoval] Model is not initialized
+21:50:01.692: [obs-backgroundremoval] Model is not initialized
+21:50:01.726: [obs-backgroundremoval] Model is not initialized
+21:50:01.759: [obs-backgroundremoval] Model is not initialized
+21:50:01.792: [obs-backgroundremoval] Model is not initialized
+21:50:01.826: [obs-backgroundremoval] Model is not initialized
+21:50:01.859: [obs-backgroundremoval] Model is not initialized
+21:50:01.892: [obs-backgroundremoval] Model is not initialized
+21:50:01.926: [obs-backgroundremoval] Model is not initialized
+21:50:01.959: [obs-backgroundremoval] Model is not initialized
+21:50:01.992: [obs-backgroundremoval] Model is not initialized
+21:50:02.026: [obs-backgroundremoval] Model is not initialized
+21:50:02.059: [obs-backgroundremoval] Model is not initialized
+21:50:02.092: [obs-backgroundremoval] Model is not initialized
+21:50:02.126: [obs-backgroundremoval] Model is not initialized
+21:50:02.159: [obs-backgroundremoval] Model is not initialized
+21:50:02.192: [obs-backgroundremoval] Model is not initialized
+21:50:02.226: [obs-backgroundremoval] Model is not initialized
+21:50:02.259: [obs-backgroundremoval] Model is not initialized
+21:50:02.292: [obs-backgroundremoval] Model is not initialized
+21:50:02.326: [obs-backgroundremoval] Model is not initialized
+21:50:02.359: [obs-backgroundremoval] Model is not initialized
+21:50:02.392: [obs-backgroundremoval] Model is not initialized
+21:50:02.426: [obs-backgroundremoval] Model is not initialized
+21:50:02.459: [obs-backgroundremoval] Model is not initialized
+21:50:02.492: [obs-backgroundremoval] Model is not initialized
+21:50:02.526: [obs-backgroundremoval] Model is not initialized
+21:50:02.559: [obs-backgroundremoval] Model is not initialized
+21:50:02.592: [obs-backgroundremoval] Model is not initialized
+21:50:02.626: [obs-backgroundremoval] Model is not initialized
+21:50:02.659: [obs-backgroundremoval] Model is not initialized
+21:50:02.692: [obs-backgroundremoval] Model is not initialized
+21:50:02.726: [obs-backgroundremoval] Model is not initialized
+21:50:02.759: [obs-backgroundremoval] Model is not initialized
+21:50:02.792: [obs-backgroundremoval] Model is not initialized
+21:50:02.826: [obs-backgroundremoval] Model is not initialized
+21:50:02.859: [obs-backgroundremoval] Model is not initialized
+21:50:02.892: [obs-backgroundremoval] Model is not initialized
+21:50:02.926: [obs-backgroundremoval] Model is not initialized
+21:50:02.959: [obs-backgroundremoval] Model is not initialized
+21:50:02.992: [obs-backgroundremoval] Model is not initialized
+21:50:03.026: [obs-backgroundremoval] Model is not initialized
+21:50:03.059: [obs-backgroundremoval] Model is not initialized
+21:50:03.092: [obs-backgroundremoval] Model is not initialized
+21:50:03.126: [obs-backgroundremoval] Model is not initialized
+21:50:03.159: [obs-backgroundremoval] Model is not initialized
+21:50:03.192: [obs-backgroundremoval] Model is not initialized
+21:50:03.226: [obs-backgroundremoval] Model is not initialized
+21:50:03.259: [obs-backgroundremoval] Model is not initialized
+21:50:03.292: [obs-backgroundremoval] Model is not initialized
+21:50:03.326: [obs-backgroundremoval] Model is not initialized
+21:50:03.359: [obs-backgroundremoval] Model is not initialized
+21:50:03.392: [obs-backgroundremoval] Model is not initialized
+21:50:03.426: [obs-backgroundremoval] Model is not initialized
+21:50:03.459: [obs-backgroundremoval] Model is not initialized
+21:50:03.492: [obs-backgroundremoval] Model is not initialized
+21:50:03.859: Last log entry repeated for 10 more lines
+21:50:03.859: [obs-backgroundremoval] Model is not initialized
+21:50:03.892: [obs-backgroundremoval] Model is not initialized
+21:50:03.926: [obs-backgroundremoval] Model is not initialized
+21:50:03.959: [obs-backgroundremoval] Model is not initialized
+21:50:03.992: [obs-backgroundremoval] Model is not initialized
+21:50:04.026: [obs-backgroundremoval] Model is not initialized
+21:50:04.059: [obs-backgroundremoval] Model is not initialized
+21:50:04.092: [obs-backgroundremoval] Model is not initialized
+21:50:04.126: [obs-backgroundremoval] Model is not initialized
+21:50:04.159: [obs-backgroundremoval] Model is not initialized
+21:50:04.192: [obs-backgroundremoval] Model is not initialized
+21:50:04.226: [obs-backgroundremoval] Model is not initialized
+21:50:04.259: [obs-backgroundremoval] Model is not initialized
+21:50:04.292: [obs-backgroundremoval] Model is not initialized
+21:50:04.326: [obs-backgroundremoval] Model is not initialized
+21:50:04.359: [obs-backgroundremoval] Model is not initialized
+21:50:04.392: [obs-backgroundremoval] Model is not initialized
+21:50:04.426: [obs-backgroundremoval] Model is not initialized
+21:50:04.459: [obs-backgroundremoval] Model is not initialized
+21:50:04.492: [obs-backgroundremoval] Model is not initialized
+21:50:04.526: [obs-backgroundremoval] Model is not initialized
+21:50:04.559: [obs-backgroundremoval] Model is not initialized
+21:50:04.592: [obs-backgroundremoval] Model is not initialized
+21:50:04.626: [obs-backgroundremoval] Model is not initialized
+21:50:04.659: [obs-backgroundremoval] Model is not initialized
+21:50:04.692: [obs-backgroundremoval] Model is not initialized
+21:50:04.726: [obs-backgroundremoval] Model is not initialized
+21:50:04.759: [obs-backgroundremoval] Model is not initialized
+21:50:04.792: [obs-backgroundremoval] Model is not initialized
+21:50:04.826: [obs-backgroundremoval] Model is not initialized
+21:50:04.859: [obs-backgroundremoval] Model is not initialized
+21:50:04.892: [obs-backgroundremoval] Model is not initialized
+21:50:04.926: [obs-backgroundremoval] Model is not initialized
+21:50:04.959: [obs-backgroundremoval] Model is not initialized
+21:50:04.992: [obs-backgroundremoval] Model is not initialized
+21:50:05.026: [obs-backgroundremoval] Model is not initialized
+21:50:05.059: [obs-backgroundremoval] Model is not initialized
+21:50:05.092: [obs-backgroundremoval] Model is not initialized
+21:50:05.126: [obs-backgroundremoval] Model is not initialized
+21:50:05.159: [obs-backgroundremoval] Model is not initialized
+21:50:05.192: [obs-backgroundremoval] Model is not initialized
+21:50:05.226: [obs-backgroundremoval] Model is not initialized
+21:50:05.259: [obs-backgroundremoval] Model is not initialized
+21:50:05.292: [obs-backgroundremoval] Model is not initialized
+21:50:05.326: [obs-backgroundremoval] Model is not initialized
+21:50:05.359: [obs-backgroundremoval] Model is not initialized
+21:50:05.393: [obs-backgroundremoval] Model is not initialized
+21:50:05.426: [obs-backgroundremoval] Model is not initialized
+21:50:05.459: [obs-backgroundremoval] Model is not initialized
+21:50:05.492: [obs-backgroundremoval] Model is not initialized
+21:50:05.526: [obs-backgroundremoval] Model is not initialized
+21:50:05.559: [obs-backgroundremoval] Model is not initialized
+21:50:05.592: [obs-backgroundremoval] Model is not initialized
+21:50:05.626: [obs-backgroundremoval] Model is not initialized
+21:50:05.659: [obs-backgroundremoval] Model is not initialized
+21:50:07.807: Last log entry repeated for 64 more lines
+21:50:07.807: [obs-backgroundremoval] get_latest_version: 
+21:50:07.826: [obs-backgroundremoval] Model is not initialized
+21:50:07.859: [obs-backgroundremoval] Model is not initialized
+21:50:07.892: [obs-backgroundremoval] Model is not initialized
+21:50:07.926: [obs-backgroundremoval] Model is not initialized
+21:50:07.959: [obs-backgroundremoval] Model is not initialized
+21:50:07.992: [obs-backgroundremoval] Model is not initialized
+21:50:08.026: [obs-backgroundremoval] Model is not initialized
+21:50:08.059: [obs-backgroundremoval] Model is not initialized
+21:50:08.092: [obs-backgroundremoval] Model is not initialized
+21:50:08.126: [obs-backgroundremoval] Model is not initialized
+21:50:08.159: [obs-backgroundremoval] Model is not initialized
+21:50:08.192: [obs-backgroundremoval] Model is not initialized
+21:50:08.226: [obs-backgroundremoval] Model is not initialized
+21:50:08.260: [obs-backgroundremoval] Model is not initialized
+21:50:08.292: [obs-backgroundremoval] Model is not initialized
+21:50:08.326: [obs-backgroundremoval] Model is not initialized
+21:50:08.359: [obs-backgroundremoval] Model is not initialized
+21:50:08.392: [obs-backgroundremoval] Model is not initialized
+21:50:08.426: [obs-backgroundremoval] Model is not initialized
+21:50:08.459: [obs-backgroundremoval] Model is not initialized
+21:50:08.492: [obs-backgroundremoval] Model is not initialized
+21:50:08.526: [obs-backgroundremoval] Model is not initialized
+21:50:08.559: [obs-backgroundremoval] Model is not initialized
+21:50:08.593: [obs-backgroundremoval] Model is not initialized
+21:50:08.626: [obs-backgroundremoval] Model is not initialized
+21:50:08.659: [obs-backgroundremoval] Model is not initialized
+21:50:08.692: [obs-backgroundremoval] Model is not initialized
+21:50:08.726: [obs-backgroundremoval] Model is not initialized
+21:50:08.759: [obs-backgroundremoval] Model is not initialized
+21:50:08.792: [obs-backgroundremoval] Model is not initialized
+21:50:08.826: [obs-backgroundremoval] Model is not initialized
+21:50:09.355: Last log entry repeated for 15 more lines
+21:50:09.356: [obs-backgroundremoval] Model models/mediapipe.onnx input 0: name input_1:0 shape (4 dim) 1 x 144 x 256 x 3
+21:50:09.356: [obs-backgroundremoval] Model models/mediapipe.onnx output 0: name segment:0 shape (4 dim) 1 x 144 x 256 x 2
+21:50:09.356: [obs-backgroundremoval] Allocated 110592 sized float-array for input 0
+21:50:09.356: [obs-backgroundremoval] Allocated 73728 sized float-array for output 0
+21:50:09.357: [obs-backgroundremoval] Background Removal Filter Options:
+21:50:09.357: [obs-backgroundremoval]   Source: Background Removal
+21:50:09.357: [obs-backgroundremoval]   Model: models/mediapipe.onnx
+21:50:09.357: [obs-backgroundremoval]   Inference Device: cpu
+21:50:09.357: [obs-backgroundremoval]   Num Threads: 1
+21:50:09.357: [obs-backgroundremoval]   Enable Threshold: true
+21:50:09.357: [obs-backgroundremoval]   Threshold: 0.500000
+21:50:09.357: [obs-backgroundremoval]   Contour Filter: 0.050000
+21:50:09.357: [obs-backgroundremoval]   Smooth Contour: 0.500000
+21:50:09.357: [obs-backgroundremoval]   Feather: 0.000000
+21:50:09.357: [obs-backgroundremoval]   Mask Every X Frames: 1
+21:50:09.357: [obs-backgroundremoval]   Enable Image Similarity: true
+21:50:09.357: [obs-backgroundremoval]   Image Similarity Threshold: 35.000000
+21:50:09.357: [obs-backgroundremoval]   Blur Background: 0
+21:50:09.357: [obs-backgroundremoval]   Enable Focal Blur: false
+21:50:09.357: [obs-backgroundremoval]   Blur Focus Point: 0.100000
+21:50:09.357: [obs-backgroundremoval]   Blur Focus Depth: 0.000000
+21:50:09.357: [obs-backgroundremoval]   Disabled: true
+21:50:09.357: [obs-backgroundremoval]   Model file path: /app/plugins/share/obs/obs-plugins/obs-backgroundremoval/models/mediapipe.onnx
+21:50:09.859: [obs-backgroundremoval] Background filter updated
+21:50:09.859: [obs-backgroundremoval] Background Removal Filter Options:
+21:50:09.859: [obs-backgroundremoval]   Source: Background Removal
+21:50:09.859: [obs-backgroundremoval]   Model: models/mediapipe.onnx
+21:50:09.859: [obs-backgroundremoval]   Inference Device: cpu
+21:50:09.859: [obs-backgroundremoval]   Num Threads: 1
+21:50:09.859: [obs-backgroundremoval]   Enable Threshold: true
+21:50:09.859: [obs-backgroundremoval]   Threshold: 0.500000
+21:50:09.859: [obs-backgroundremoval]   Contour Filter: 0.050000
+21:50:09.859: [obs-backgroundremoval]   Smooth Contour: 0.500000
+21:50:09.859: [obs-backgroundremoval]   Feather: 0.000000
+21:50:09.859: [obs-backgroundremoval]   Mask Every X Frames: 1
+21:50:09.859: [obs-backgroundremoval]   Enable Image Similarity: true
+21:50:09.859: [obs-backgroundremoval]   Image Similarity Threshold: 35.000000
+21:50:09.859: [obs-backgroundremoval]   Blur Background: 0
+21:50:09.859: [obs-backgroundremoval]   Enable Focal Blur: false
+21:50:09.859: [obs-backgroundremoval]   Blur Focus Point: 0.100000
+21:50:09.859: [obs-backgroundremoval]   Blur Focus Depth: 0.000000
+21:50:09.859: [obs-backgroundremoval]   Disabled: true
+21:50:09.859: [obs-backgroundremoval]   Model file path: /app/plugins/share/obs/obs-plugins/obs-backgroundremoval/models/mediapipe.onnx
+21:50:10.159: [obs-backgroundremoval] Background filter updated
+21:50:10.160: [obs-backgroundremoval] /onnxruntime_src/onnxruntime/core/session/provider_bridge_ort.cc:1209 onnxruntime::Provider& onnxruntime::ProviderLibrary::Get() [ONNXRuntimeError] : 1 : FAIL : Failed to load library libonnxruntime_providers_tensorrt.so with error: libcudnn.so.8: cannot open shared object file: No such file or directory
+21:50:10.160: 
+21:50:10.160: [obs-backgroundremoval] Failed to create ONNXRuntime session. Error code: 5
+21:50:10.492: [obs-backgroundremoval] Background filter updated
+21:50:10.493: [obs-backgroundremoval] Background Removal Filter Options:
+21:50:10.493: [obs-backgroundremoval]   Source: Background Removal
+21:50:10.493: [obs-backgroundremoval]   Model: models/mediapipe.onnx
+21:50:10.493: [obs-backgroundremoval]   Inference Device: tensorrt
+21:50:10.493: [obs-backgroundremoval]   Num Threads: 1
+21:50:10.493: [obs-backgroundremoval]   Enable Threshold: true
+21:50:10.493: [obs-backgroundremoval]   Threshold: 0.500000
+21:50:10.493: [obs-backgroundremoval]   Contour Filter: 0.050000
+21:50:10.493: [obs-backgroundremoval]   Smooth Contour: 0.500000
+21:50:10.493: [obs-backgroundremoval]   Feather: 0.000000
+21:50:10.493: [obs-backgroundremoval]   Mask Every X Frames: 1
+21:50:10.493: [obs-backgroundremoval]   Enable Image Similarity: true
+21:50:10.493: [obs-backgroundremoval]   Image Similarity Threshold: 35.000000
+21:50:10.493: [obs-backgroundremoval]   Blur Background: 0
+21:50:10.493: [obs-backgroundremoval]   Enable Focal Blur: false
+21:50:10.493: [obs-backgroundremoval]   Blur Focus Point: 0.100000
+21:50:10.493: [obs-backgroundremoval]   Blur Focus Depth: 0.000000
+21:50:10.493: [obs-backgroundremoval]   Disabled: true
+21:50:10.493: [obs-backgroundremoval]   Model file path: /app/plugins/share/obs/obs-plugins/obs-backgroundremoval/models/mediapipe.onnx
+21:50:10.493: [obs-backgroundremoval] Model is not initialized
+21:50:10.526: [obs-backgroundremoval] Model is not initialized
+21:50:10.559: [obs-backgroundremoval] Model is not initialized
+21:50:10.592: [obs-backgroundremoval] Model is not initialized
+21:50:10.626: [obs-backgroundremoval] Model is not initialized
+21:50:10.659: [obs-backgroundremoval] Model is not initialized
+21:50:10.692: [obs-backgroundremoval] Model is not initialized
+21:50:10.726: [obs-backgroundremoval] Model is not initialized
+21:50:10.759: [obs-backgroundremoval] Model is not initialized
+21:50:10.793: [obs-backgroundremoval] Model is not initialized
+21:50:10.826: [obs-backgroundremoval] Model is not initialized
+21:50:10.859: [obs-backgroundremoval] Model is not initialized
+21:50:10.892: [obs-backgroundremoval] Model is not initialized
+21:50:10.926: [obs-backgroundremoval] Model is not initialized
+21:50:10.959: [obs-backgroundremoval] Model is not initialized
+21:50:10.992: [obs-backgroundremoval] Model is not initialized
+21:50:11.026: [obs-backgroundremoval] Model is not initialized
+21:50:11.059: [obs-backgroundremoval] Model is not initialized
+21:50:11.092: [obs-backgroundremoval] Model is not initialized
+21:50:11.126: [obs-backgroundremoval] Model is not initialized
+21:50:11.159: [obs-backgroundremoval] Model is not initialized
+21:50:11.193: [obs-backgroundremoval] Model is not initialized
+21:50:11.226: [obs-backgroundremoval] Model is not initialized
+21:50:11.259: [obs-backgroundremoval] Model is not initialized
+21:50:11.292: [obs-backgroundremoval] Model is not initialized
+21:50:11.326: [obs-backgroundremoval] Model is not initialized
+21:50:11.359: [obs-backgroundremoval] Model is not initialized
+21:50:11.392: [obs-backgroundremoval] Model is not initialized
+21:50:11.426: [obs-backgroundremoval] Model is not initialized
+21:50:11.459: [obs-backgroundremoval] Model is not initialized
+21:50:11.492: [obs-backgroundremoval] Model is not initialized
+21:50:14.592: Last log entry repeated for 92 more lines
+21:50:14.592: [obs-backgroundremoval] Model is not initialized
+21:50:14.626: [obs-backgroundremoval] Model is not initialized
+21:50:14.659: [obs-backgroundremoval] Model is not initialized
+21:50:14.692: [obs-backgroundremoval] Model is not initialized
+21:50:14.726: [obs-backgroundremoval] Model is not initialized
+21:50:14.759: [obs-backgroundremoval] Model is not initialized
+21:50:14.792: [obs-backgroundremoval] Model is not initialized
+21:50:14.826: [obs-backgroundremoval] Model is not initialized
+21:50:14.859: [obs-backgroundremoval] Model is not initialized
+21:50:14.892: [obs-backgroundremoval] Model is not initialized
+21:50:14.926: [obs-backgroundremoval] Model is not initialized
+21:50:14.959: [obs-backgroundremoval] Model is not initialized
+21:50:14.992: [obs-backgroundremoval] Model is not initialized
+21:50:15.026: [obs-backgroundremoval] Model is not initialized
+21:50:15.059: [obs-backgroundremoval] Model is not initialized
+21:50:15.092: [obs-backgroundremoval] Model is not initialized
+21:50:15.126: [obs-backgroundremoval] Model is not initialized
+21:50:15.159: [obs-backgroundremoval] Model is not initialized
+21:50:15.192: [obs-backgroundremoval] Model is not initialized
+21:50:15.226: [obs-backgroundremoval] Model is not initialized
+21:50:15.259: [obs-backgroundremoval] Model is not initialized
+21:50:15.292: [obs-backgroundremoval] Model is not initialized
+21:50:15.326: [obs-backgroundremoval] Model is not initialized
+21:50:15.359: [obs-backgroundremoval] Model is not initialized
+21:50:15.392: [obs-backgroundremoval] Model is not initialized
+21:50:15.426: [obs-backgroundremoval] Model is not initialized
+21:50:15.459: [obs-backgroundremoval] Model is not initialized
+21:50:15.492: [obs-backgroundremoval] Model is not initialized
+21:50:15.526: [obs-backgroundremoval] Model is not initialized
+21:50:15.559: [obs-backgroundremoval] Model is not initialized
+21:50:15.592: [obs-backgroundremoval] Model is not initialized
+21:50:15.726: Last log entry repeated for 3 more lines
+21:50:15.726: [obs-backgroundremoval] Model is not initialized
+21:50:15.759: [obs-backgroundremoval] Model is not initialized
+21:50:15.792: [obs-backgroundremoval] Model is not initialized
+21:50:15.826: [obs-backgroundremoval] Model is not initialized
+21:50:15.859: [obs-backgroundremoval] Model is not initialized
+21:50:15.892: [obs-backgroundremoval] Model is not initialized
+21:50:15.926: [obs-backgroundremoval] Model is not initialized
+21:50:15.959: [obs-backgroundremoval] Model is not initialized
+21:50:15.992: [obs-backgroundremoval] Model is not initialized
+21:50:16.026: [obs-backgroundremoval] Model is not initialized
+21:50:16.059: [obs-backgroundremoval] Model is not initialized
+21:50:16.092: [obs-backgroundremoval] Model is not initialized
+21:50:16.126: [obs-backgroundremoval] Model is not initialized
+21:50:16.159: [obs-backgroundremoval] Model is not initialized
+21:50:16.192: [obs-backgroundremoval] Model is not initialized
+21:50:16.226: [obs-backgroundremoval] Model is not initialized
+21:50:16.259: [obs-backgroundremoval] Model is not initialized
+21:50:16.292: [obs-backgroundremoval] Model is not initialized
+21:50:16.326: [obs-backgroundremoval] Model is not initialized
+21:50:16.359: [obs-backgroundremoval] Model is not initialized
+21:50:16.392: [obs-backgroundremoval] Model is not initialized
+21:50:16.426: [obs-backgroundremoval] Model is not initialized
+21:50:16.459: [obs-backgroundremoval] Model is not initialized
+21:50:16.492: [obs-backgroundremoval] Model is not initialized
+21:50:16.526: [obs-backgroundremoval] Model is not initialized
+21:50:16.559: [obs-backgroundremoval] Model is not initialized
+21:50:16.592: [obs-backgroundremoval] Model is not initialized
+21:50:16.626: [obs-backgroundremoval] Model is not initialized
+21:50:16.659: [obs-backgroundremoval] Model is not initialized
+21:50:16.692: [obs-backgroundremoval] Model is not initialized
+21:50:16.726: [obs-backgroundremoval] Model is not initialized
+21:51:02.582: Last log entry repeated for 1375 more lines
+21:51:02.583: User added filter 'Scaling/Aspect Ratio' (scale_filter) to source 'Video Capture Device (V4L2)'
+21:51:02.592: [obs-backgroundremoval] Model is not initialized
+21:51:02.626: [obs-backgroundremoval] Model is not initialized
+21:51:02.659: [obs-backgroundremoval] Model is not initialized
+21:51:02.692: [obs-backgroundremoval] Model is not initialized
+21:51:02.726: [obs-backgroundremoval] Model is not initialized
+21:51:02.759: [obs-backgroundremoval] Model is not initialized
+21:51:02.792: [obs-backgroundremoval] Model is not initialized
+21:51:02.826: [obs-backgroundremoval] Model is not initialized
+21:51:02.859: [obs-backgroundremoval] Model is not initialized
+21:51:02.892: [obs-backgroundremoval] Model is not initialized
+21:51:02.926: [obs-backgroundremoval] Model is not initialized
+21:51:02.959: [obs-backgroundremoval] Model is not initialized
+21:51:02.992: [obs-backgroundremoval] Model is not initialized
+21:51:03.026: [obs-backgroundremoval] Model is not initialized
+21:51:03.059: [obs-backgroundremoval] Model is not initialized
+21:51:03.092: [obs-backgroundremoval] Model is not initialized
+21:51:03.126: [obs-backgroundremoval] Model is not initialized
+21:51:03.159: [obs-backgroundremoval] Model is not initialized
+21:51:03.192: [obs-backgroundremoval] Model is not initialized
+21:51:03.226: [obs-backgroundremoval] Model is not initialized
+21:51:03.259: [obs-backgroundremoval] Model is not initialized
+21:51:03.292: [obs-backgroundremoval] Model is not initialized
+21:51:03.326: [obs-backgroundremoval] Model is not initialized
+21:51:03.359: [obs-backgroundremoval] Model is not initialized
+21:51:03.392: [obs-backgroundremoval] Model is not initialized
+21:51:03.426: [obs-backgroundremoval] Model is not initialized
+21:51:03.459: [obs-backgroundremoval] Model is not initialized
+21:51:03.492: [obs-backgroundremoval] Model is not initialized
+21:51:03.526: [obs-backgroundremoval] Model is not initialized
+21:51:03.559: [obs-backgroundremoval] Model is not initialized
+21:51:03.592: [obs-backgroundremoval] Model is not initialized
+21:51:06.146: Last log entry repeated for 75 more lines
+21:51:06.146: [obs-backgroundremoval] Model is not initialized
+21:51:06.148: [pipewire] Stream 0x55992c956c60 state: "paused" (error: none)
+21:51:06.148: [pipewire] Negotiated format:
+21:51:06.148: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+21:51:06.148: [pipewire]     Modifier: 0x300000000e08014
+21:51:06.148: [pipewire]     Size: 1920x1080
+21:51:06.148: [pipewire]     Framerate: 0/1
+21:51:06.148: [pipewire] Negotiated format:
+21:51:06.148: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+21:51:06.148: [pipewire]     Modifier: 0x300000000e08014
+21:51:06.148: [pipewire]     Size: 1920x1080
+21:51:06.148: [pipewire]     Framerate: 0/1
+21:51:06.149: [pipewire] Negotiated format:
+21:51:06.149: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+21:51:06.149: [pipewire]     Modifier: 0x300000000e08014
+21:51:06.149: [pipewire]     Size: 1920x1080
+21:51:06.149: [pipewire]     Framerate: 0/1
+21:51:06.150: [pipewire] Stream 0x55992c956c60 state: "streaming" (error: none)
+21:51:06.163: [obs-backgroundremoval] Model is not initialized
+21:51:06.192: [obs-backgroundremoval] Model is not initialized
+21:51:06.226: [obs-backgroundremoval] Model is not initialized
+21:51:06.259: [obs-backgroundremoval] Model is not initialized
+21:51:06.292: [obs-backgroundremoval] Model is not initialized
+21:51:06.326: [obs-backgroundremoval] Model is not initialized
+21:51:06.359: [obs-backgroundremoval] Model is not initialized
+21:51:06.392: [obs-backgroundremoval] Model is not initialized
+21:51:06.426: [obs-backgroundremoval] Model is not initialized
+21:51:06.459: [obs-backgroundremoval] Model is not initialized
+21:51:06.492: [obs-backgroundremoval] Model is not initialized
+21:51:06.526: [obs-backgroundremoval] Model is not initialized
+21:51:06.559: [obs-backgroundremoval] Model is not initialized
+21:51:06.592: [obs-backgroundremoval] Model is not initialized
+21:51:06.626: [obs-backgroundremoval] Model is not initialized
+21:51:06.659: [obs-backgroundremoval] Model is not initialized
+21:51:06.692: [obs-backgroundremoval] Model is not initialized
+21:51:06.726: [obs-backgroundremoval] Model is not initialized
+21:51:06.759: [obs-backgroundremoval] Model is not initialized
+21:51:06.792: [obs-backgroundremoval] Model is not initialized
+21:51:06.826: [obs-backgroundremoval] Model is not initialized
+21:51:06.859: [obs-backgroundremoval] Model is not initialized
+21:51:06.892: [obs-backgroundremoval] Model is not initialized
+21:51:06.926: [obs-backgroundremoval] Model is not initialized
+21:51:06.959: [obs-backgroundremoval] Model is not initialized
+21:51:06.992: [obs-backgroundremoval] Model is not initialized
+21:51:07.026: [obs-backgroundremoval] Model is not initialized
+21:51:07.059: [obs-backgroundremoval] Model is not initialized
+21:51:07.092: [obs-backgroundremoval] Model is not initialized
+21:51:07.126: [obs-backgroundremoval] Model is not initialized
+21:51:07.159: [obs-backgroundremoval] Model is not initialized
+21:51:14.792: Last log entry repeated for 228 more lines
+21:51:14.792: [obs-backgroundremoval] Model is not initialized
+21:51:14.826: [obs-backgroundremoval] Model is not initialized
+21:51:14.859: [obs-backgroundremoval] Model is not initialized
+21:51:14.892: [obs-backgroundremoval] Model is not initialized
+21:51:14.926: [obs-backgroundremoval] Model is not initialized
+21:51:14.959: [obs-backgroundremoval] Model is not initialized
+21:51:14.992: [obs-backgroundremoval] Model is not initialized
+21:51:15.026: [obs-backgroundremoval] Model is not initialized
+21:51:15.059: [obs-backgroundremoval] Model is not initialized
+21:51:15.092: [obs-backgroundremoval] Model is not initialized
+21:51:15.126: [obs-backgroundremoval] Model is not initialized
+21:51:15.159: [obs-backgroundremoval] Model is not initialized
+21:51:15.192: [obs-backgroundremoval] Model is not initialized
+21:51:15.226: [obs-backgroundremoval] Model is not initialized
+21:51:15.259: [obs-backgroundremoval] Model is not initialized
+21:51:15.292: [obs-backgroundremoval] Model is not initialized
+21:51:15.326: [obs-backgroundremoval] Model is not initialized
+21:51:15.359: [obs-backgroundremoval] Model is not initialized
+21:51:15.392: [obs-backgroundremoval] Model is not initialized
+21:51:15.426: [obs-backgroundremoval] Model is not initialized
+21:51:15.459: [obs-backgroundremoval] Model is not initialized
+21:51:15.492: [obs-backgroundremoval] Model is not initialized
+21:51:15.526: [obs-backgroundremoval] Model is not initialized
+21:51:15.559: [obs-backgroundremoval] Model is not initialized
+21:51:15.592: [obs-backgroundremoval] Model is not initialized
+21:51:15.626: [obs-backgroundremoval] Model is not initialized
+21:51:15.659: [obs-backgroundremoval] Model is not initialized
+21:51:15.692: [obs-backgroundremoval] Model is not initialized
+21:51:15.726: [obs-backgroundremoval] Model is not initialized
+21:51:15.759: [obs-backgroundremoval] Model is not initialized
+21:51:15.792: [obs-backgroundremoval] Model is not initialized
+21:51:16.692: Last log entry repeated for 26 more lines
+21:51:16.692: [obs-backgroundremoval] Model is not initialized
+21:51:16.726: [obs-backgroundremoval] Model is not initialized
+21:51:16.759: [obs-backgroundremoval] Model is not initialized
+21:51:16.792: [obs-backgroundremoval] Model is not initialized
+21:51:16.826: [obs-backgroundremoval] Model is not initialized
+21:51:16.859: [obs-backgroundremoval] Model is not initialized
+21:51:16.892: [obs-backgroundremoval] Model is not initialized
+21:51:16.926: [obs-backgroundremoval] Model is not initialized
+21:51:16.959: [obs-backgroundremoval] Model is not initialized
+21:51:16.992: [obs-backgroundremoval] Model is not initialized
+21:51:17.026: [obs-backgroundremoval] Model is not initialized
+21:51:17.059: [obs-backgroundremoval] Model is not initialized
+21:51:17.092: [obs-backgroundremoval] Model is not initialized
+21:51:17.126: [obs-backgroundremoval] Model is not initialized
+21:51:17.159: [obs-backgroundremoval] Model is not initialized
+21:51:17.192: [obs-backgroundremoval] Model is not initialized
+21:51:17.226: [obs-backgroundremoval] Model is not initialized
+21:51:17.259: [obs-backgroundremoval] Model is not initialized
+21:51:17.292: [obs-backgroundremoval] Model is not initialized
+21:51:17.326: [obs-backgroundremoval] Model is not initialized
+21:51:17.359: [obs-backgroundremoval] Model is not initialized
+21:51:17.392: [obs-backgroundremoval] Model is not initialized
+21:51:17.426: [obs-backgroundremoval] Model is not initialized
+21:51:17.459: [obs-backgroundremoval] Model is not initialized
+21:51:17.492: [obs-backgroundremoval] Model is not initialized
+21:51:17.526: [obs-backgroundremoval] Model is not initialized
+21:51:17.559: [obs-backgroundremoval] Model is not initialized
+21:51:17.592: [obs-backgroundremoval] Model is not initialized
+21:51:17.626: [obs-backgroundremoval] Model is not initialized
+21:51:17.659: [obs-backgroundremoval] Model is not initialized
+21:51:17.692: [obs-backgroundremoval] Model is not initialized
+21:51:19.412: Last log entry repeated for 51 more lines
+21:51:19.412: User removed filter 'Scaling/Aspect Ratio' (scale_filter) from source 'Video Capture Device (V4L2)'
+21:51:19.412: [obs-backgroundremoval] get_latest_version: 
+21:51:19.462: [obs-backgroundremoval] Model is not initialized
+21:51:19.465: [obs-backgroundremoval] Model is not initialized
+21:51:19.492: [obs-backgroundremoval] Model is not initialized
+21:51:19.526: [obs-backgroundremoval] Model is not initialized
+21:51:19.559: [obs-backgroundremoval] Model is not initialized
+21:51:19.592: [obs-backgroundremoval] Model is not initialized
+21:51:19.626: [obs-backgroundremoval] Model is not initialized
+21:51:19.659: [obs-backgroundremoval] Model is not initialized
+21:51:19.692: [obs-backgroundremoval] Model is not initialized
+21:51:19.726: [obs-backgroundremoval] Model is not initialized
+21:51:19.759: [obs-backgroundremoval] Model is not initialized
+21:51:19.792: [obs-backgroundremoval] Model is not initialized
+21:51:19.826: [obs-backgroundremoval] Model is not initialized
+21:51:19.859: [obs-backgroundremoval] Model is not initialized
+21:51:19.892: [obs-backgroundremoval] Model is not initialized
+21:51:19.926: [obs-backgroundremoval] Model is not initialized
+21:51:19.959: [obs-backgroundremoval] Model is not initialized
+21:51:19.992: [obs-backgroundremoval] Model is not initialized
+21:51:20.026: [obs-backgroundremoval] Model is not initialized
+21:51:20.059: [obs-backgroundremoval] Model is not initialized
+21:51:20.092: [obs-backgroundremoval] Model is not initialized
+21:51:20.126: [obs-backgroundremoval] Model is not initialized
+21:51:20.159: [obs-backgroundremoval] Model is not initialized
+21:51:20.192: [obs-backgroundremoval] Model is not initialized
+21:51:20.226: [obs-backgroundremoval] Model is not initialized
+21:51:20.259: [obs-backgroundremoval] Model is not initialized
+21:51:20.292: [obs-backgroundremoval] Model is not initialized
+21:51:20.326: [obs-backgroundremoval] Model is not initialized
+21:51:20.359: [obs-backgroundremoval] Model is not initialized
+21:51:20.392: [obs-backgroundremoval] Model is not initialized
+21:51:20.426: [obs-backgroundremoval] Model is not initialized
+21:51:22.150: Last log entry repeated for 51 more lines
+21:51:22.150: [obs-backgroundremoval] get_latest_version: 
+21:51:22.159: [obs-backgroundremoval] Model is not initialized
+21:51:22.192: [obs-backgroundremoval] Model is not initialized
+21:51:22.226: [obs-backgroundremoval] Model is not initialized
+21:51:22.259: [obs-backgroundremoval] Model is not initialized
+21:51:22.292: [obs-backgroundremoval] Model is not initialized
+21:51:22.326: [obs-backgroundremoval] Model is not initialized
+21:51:22.359: [obs-backgroundremoval] Model is not initialized
+21:51:22.393: [obs-backgroundremoval] Model is not initialized
+21:51:22.426: [obs-backgroundremoval] Model is not initialized
+21:51:22.459: [obs-backgroundremoval] Model is not initialized
+21:51:22.492: [obs-backgroundremoval] Model is not initialized
+21:51:22.526: [obs-backgroundremoval] Model is not initialized
+21:51:22.559: [obs-backgroundremoval] Model is not initialized
+21:51:22.593: [obs-backgroundremoval] Model is not initialized
+21:51:22.626: [obs-backgroundremoval] Model is not initialized
+21:51:22.659: [obs-backgroundremoval] Model is not initialized
+21:51:22.692: [obs-backgroundremoval] Model is not initialized
+21:51:22.726: [obs-backgroundremoval] Model is not initialized
+21:51:22.759: [obs-backgroundremoval] Model is not initialized
+21:51:22.792: [obs-backgroundremoval] Model is not initialized
+21:51:22.826: [obs-backgroundremoval] Model is not initialized
+21:51:22.859: [obs-backgroundremoval] Model is not initialized
+21:51:22.892: [obs-backgroundremoval] Model is not initialized
+21:51:22.926: [obs-backgroundremoval] Model is not initialized
+21:51:22.959: [obs-backgroundremoval] Model is not initialized
+21:51:22.992: [obs-backgroundremoval] Model is not initialized
+21:51:23.026: [obs-backgroundremoval] Model is not initialized
+21:51:23.059: [obs-backgroundremoval] Model is not initialized
+21:51:23.092: [obs-backgroundremoval] Model is not initialized
+21:51:23.126: [obs-backgroundremoval] Model is not initialized
+21:51:23.159: [obs-backgroundremoval] Model is not initialized
+21:51:26.360: Last log entry repeated for 96 more lines
+21:51:26.360: [obs-backgroundremoval] Model models/tbefn_fp32.onnx input 0: name Placeholder shape (4 dim) 1 x 3 x 180 x 320
+21:51:26.360: [obs-backgroundremoval] Model models/tbefn_fp32.onnx output 0: name fusion/fusion_3/BiasAdd shape (4 dim) 1 x 180 x 320 x 3
+21:51:26.360: [obs-backgroundremoval] Allocated 172800 sized float-array for input 0
+21:51:26.360: [obs-backgroundremoval] Allocated 172800 sized float-array for output 0
+21:51:26.378: User added filter 'Enhance portrait' (enhanceportrait) to source 'Video Capture Device (V4L2)'
+21:51:26.380: [obs-backgroundremoval] get_latest_version: 
+21:51:26.392: [obs-backgroundremoval] Model is not initialized
+21:51:26.426: [obs-backgroundremoval] Model is not initialized
+21:51:26.515: [obs-backgroundremoval] Model is not initialized
+21:51:26.605: [obs-backgroundremoval] Model is not initialized
+21:51:26.679: [obs-backgroundremoval] Model is not initialized
+21:51:26.756: [obs-backgroundremoval] Model is not initialized
+21:51:26.832: [obs-backgroundremoval] Model is not initialized
+21:51:26.905: [obs-backgroundremoval] Model is not initialized
+21:51:26.980: [obs-backgroundremoval] Model is not initialized
+21:51:27.060: [obs-backgroundremoval] Model is not initialized
+21:51:27.137: [obs-backgroundremoval] Model is not initialized
+21:51:27.212: [obs-backgroundremoval] Model is not initialized
+21:51:27.286: [obs-backgroundremoval] Model is not initialized
+21:51:27.359: [obs-backgroundremoval] Model is not initialized
+21:51:27.433: [obs-backgroundremoval] Model is not initialized
+21:51:27.506: [obs-backgroundremoval] Model is not initialized
+21:51:27.582: [obs-backgroundremoval] Model is not initialized
+21:51:27.659: [obs-backgroundremoval] Model is not initialized
+21:51:27.732: [obs-backgroundremoval] Model is not initialized
+21:51:27.808: [obs-backgroundremoval] Model is not initialized
+21:51:27.883: [obs-backgroundremoval] Model is not initialized
+21:51:27.956: [obs-backgroundremoval] Model is not initialized
+21:51:28.035: [obs-backgroundremoval] Model is not initialized
+21:51:28.110: [obs-backgroundremoval] Model is not initialized
+21:51:28.187: [obs-backgroundremoval] Model is not initialized
+21:51:28.262: [obs-backgroundremoval] Model is not initialized
+21:51:28.337: [obs-backgroundremoval] Model is not initialized
+21:51:28.412: [obs-backgroundremoval] Model is not initialized
+21:51:28.487: [obs-backgroundremoval] Model is not initialized
+21:51:28.506: [obs-backgroundremoval] Model models/tbefn_fp32.onnx input 0: name Placeholder shape (4 dim) 1 x 3 x 180 x 320
+21:51:28.506: [obs-backgroundremoval] Model models/tbefn_fp32.onnx output 0: name fusion/fusion_3/BiasAdd shape (4 dim) 1 x 180 x 320 x 3
+21:51:28.506: [obs-backgroundremoval] Allocated 172800 sized float-array for input 0
+21:51:28.506: [obs-backgroundremoval] Allocated 172800 sized float-array for output 0
+21:51:28.563: [obs-backgroundremoval] Model is not initialized
+21:51:28.622: [obs-backgroundremoval] Model is not initialized
+21:51:28.683: [obs-backgroundremoval] Model is not initialized
+21:51:28.733: [obs-backgroundremoval] Model is not initialized
+21:51:28.785: [obs-backgroundremoval] Model is not initialized
+21:51:28.851: [obs-backgroundremoval] Model is not initialized
+21:51:28.903: [obs-backgroundremoval] Model is not initialized
+21:51:28.952: [obs-backgroundremoval] Model is not initialized
+21:51:29.016: [obs-backgroundremoval] Model is not initialized
+21:51:29.066: [obs-backgroundremoval] Model is not initialized
+21:51:29.116: [obs-backgroundremoval] Model is not initialized
+21:51:29.163: [obs-backgroundremoval] Model is not initialized
+21:51:29.213: [obs-backgroundremoval] Model is not initialized
+21:51:29.263: [obs-backgroundremoval] Model is not initialized
+21:51:29.310: [obs-backgroundremoval] Model is not initialized
+21:51:29.360: [obs-backgroundremoval] Model is not initialized
+21:51:29.410: [obs-backgroundremoval] Model is not initialized
+21:51:29.460: [obs-backgroundremoval] Model is not initialized
+21:51:29.512: [obs-backgroundremoval] Model is not initialized
+21:51:29.561: [obs-backgroundremoval] Model is not initialized
+21:51:29.610: [obs-backgroundremoval] Model is not initialized
+21:51:29.642: [obs-backgroundremoval] Model models/uretinex_net_180x320.onnx input 0: name input shape (4 dim) 1 x 3 x 180 x 320
+21:51:29.643: [obs-backgroundremoval] Model models/uretinex_net_180x320.onnx input 1: name exposure_ratio_3to5 shape (1 dim) 1 x 0 x 0 x 0
+21:51:29.643: [obs-backgroundremoval] Model models/uretinex_net_180x320.onnx output 0: name output shape (4 dim) 1 x 3 x 180 x 320
+21:51:29.643: [obs-backgroundremoval] Allocated 172800 sized float-array for input 0
+21:51:29.643: [obs-backgroundremoval] Allocated 1 sized float-array for input 1
+21:51:29.643: [obs-backgroundremoval] Allocated 172800 sized float-array for output 0
+21:51:30.082: [obs-backgroundremoval] Model is not initialized
+21:51:30.526: [obs-backgroundremoval] Model is not initialized
+21:51:30.970: [obs-backgroundremoval] Model is not initialized
+21:51:30.993: [obs-backgroundremoval] Model models/uretinex_net_180x320.onnx input 0: name input shape (4 dim) 1 x 3 x 180 x 320
+21:51:30.993: [obs-backgroundremoval] Model models/uretinex_net_180x320.onnx input 1: name exposure_ratio_3to5 shape (1 dim) 1 x 0 x 0 x 0
+21:51:30.993: [obs-backgroundremoval] Model models/uretinex_net_180x320.onnx output 0: name output shape (4 dim) 1 x 3 x 180 x 320
+21:51:30.993: [obs-backgroundremoval] Allocated 172800 sized float-array for input 0
+21:51:30.993: [obs-backgroundremoval] Allocated 1 sized float-array for input 1
+21:51:30.993: [obs-backgroundremoval] Allocated 172800 sized float-array for output 0
+21:51:32.187: [obs-backgroundremoval] Model is not initialized
+21:51:33.011: [obs-backgroundremoval] Model is not initialized
+21:51:33.025: [obs-backgroundremoval] Model models/semantic_guided_llie_180x324.onnx input 0: name input shape (4 dim) 1 x 3 x 180 x 324
+21:51:33.025: [obs-backgroundremoval] Model models/semantic_guided_llie_180x324.onnx output 0: name output shape (4 dim) 1 x 3 x 180 x 324
+21:51:33.025: [obs-backgroundremoval] Allocated 174960 sized float-array for input 0
+21:51:33.025: [obs-backgroundremoval] Allocated 174960 sized float-array for output 0
+21:51:33.061: [obs-backgroundremoval] Model is not initialized
+21:51:33.097: [obs-backgroundremoval] Model is not initialized
+21:51:33.132: [obs-backgroundremoval] Model is not initialized
+21:51:33.171: [obs-backgroundremoval] Model is not initialized
+21:51:33.205: [obs-backgroundremoval] Model is not initialized
+21:51:33.226: [obs-backgroundremoval] Model is not initialized
+21:51:33.259: [obs-backgroundremoval] Model is not initialized
+21:51:33.292: [obs-backgroundremoval] Model is not initialized
+21:51:33.326: [obs-backgroundremoval] Model is not initialized
+21:51:33.359: [obs-backgroundremoval] Model is not initialized
+21:51:33.392: [obs-backgroundremoval] Model is not initialized
+21:51:33.426: [obs-backgroundremoval] Model is not initialized
+21:51:33.459: [obs-backgroundremoval] Model is not initialized
+21:51:33.492: [obs-backgroundremoval] Model is not initialized
+21:51:33.526: [obs-backgroundremoval] Model is not initialized
+21:51:33.559: [obs-backgroundremoval] Model is not initialized
+21:51:33.592: [obs-backgroundremoval] Model is not initialized
+21:51:33.626: [obs-backgroundremoval] Model is not initialized
+21:51:33.659: [obs-backgroundremoval] Model is not initialized
+21:51:33.692: [obs-backgroundremoval] Model is not initialized
+21:51:33.726: [obs-backgroundremoval] Model is not initialized
+21:51:33.759: [obs-backgroundremoval] Model is not initialized
+21:51:33.792: [obs-backgroundremoval] Model is not initialized
+21:51:33.826: [obs-backgroundremoval] Model is not initialized
+21:51:33.859: [obs-backgroundremoval] Model is not initialized
+21:51:33.892: [obs-backgroundremoval] Model is not initialized
+21:51:33.926: [obs-backgroundremoval] Model is not initialized
+21:51:33.959: [obs-backgroundremoval] Model is not initialized
+21:51:33.992: [obs-backgroundremoval] Model is not initialized
+21:51:34.026: [obs-backgroundremoval] Model is not initialized
+21:51:34.059: [obs-backgroundremoval] Model is not initialized
+21:51:34.293: Last log entry repeated for 7 more lines
+21:51:34.293: [obs-backgroundremoval] /onnxruntime_src/onnxruntime/core/session/provider_bridge_ort.cc:1209 onnxruntime::Provider& onnxruntime::ProviderLibrary::Get() [ONNXRuntimeError] : 1 : FAIL : Failed to load library libonnxruntime_providers_tensorrt.so with error: libcudnn.so.8: cannot open shared object file: No such file or directory
+21:51:34.293: 
+21:51:34.326: [obs-backgroundremoval] Model is not initialized
+21:51:34.359: [obs-backgroundremoval] Model is not initialized
+21:51:34.392: [obs-backgroundremoval] Model is not initialized
+21:51:34.426: [obs-backgroundremoval] Model is not initialized
+21:51:34.459: [obs-backgroundremoval] Model is not initialized
+21:51:34.492: [obs-backgroundremoval] Model is not initialized
+21:51:34.526: [obs-backgroundremoval] Model is not initialized
+21:51:34.559: [obs-backgroundremoval] Model is not initialized
+21:51:34.592: [obs-backgroundremoval] Model is not initialized
+21:51:34.626: [obs-backgroundremoval] Model is not initialized
+21:51:34.659: [obs-backgroundremoval] Model is not initialized
+21:51:34.692: [obs-backgroundremoval] Model is not initialized
+21:51:34.726: [obs-backgroundremoval] Model is not initialized
+21:51:34.759: [obs-backgroundremoval] Model is not initialized
+21:51:34.792: [obs-backgroundremoval] Model is not initialized
+21:51:34.826: [obs-backgroundremoval] Model is not initialized
+21:51:34.859: [obs-backgroundremoval] Model is not initialized
+21:51:34.892: [obs-backgroundremoval] Model is not initialized
+21:51:34.926: [obs-backgroundremoval] Model is not initialized
+21:51:34.959: [obs-backgroundremoval] Model is not initialized
+21:51:34.992: [obs-backgroundremoval] Model is not initialized
+21:51:35.026: [obs-backgroundremoval] Model is not initialized
+21:51:35.059: [obs-backgroundremoval] Model is not initialized
+21:51:35.092: [obs-backgroundremoval] Model is not initialized
+21:51:35.126: [obs-backgroundremoval] Model is not initialized
+21:51:35.159: [obs-backgroundremoval] Model is not initialized
+21:51:35.192: [obs-backgroundremoval] Model is not initialized
+21:51:35.226: [obs-backgroundremoval] Model is not initialized
+21:51:35.259: [obs-backgroundremoval] Model is not initialized
+21:51:35.292: [obs-backgroundremoval] Model is not initialized
+21:51:35.326: [obs-backgroundremoval] Model is not initialized
+21:51:38.952: Last log entry repeated for 108 more lines
+21:51:38.952: [obs-backgroundremoval] get_latest_version: 
+21:51:38.959: [obs-backgroundremoval] Model is not initialized
+21:51:38.992: [obs-backgroundremoval] Model is not initialized
+21:51:39.026: [obs-backgroundremoval] Model is not initialized
+21:51:39.059: [obs-backgroundremoval] Model is not initialized
+21:51:39.092: [obs-backgroundremoval] Model is not initialized
+21:51:39.126: [obs-backgroundremoval] Model is not initialized
+21:51:39.159: [obs-backgroundremoval] Model is not initialized
+21:51:39.192: [obs-backgroundremoval] Model is not initialized
+21:51:39.226: [obs-backgroundremoval] Model is not initialized
+21:51:39.259: [obs-backgroundremoval] Model is not initialized
+21:51:39.292: [obs-backgroundremoval] Model is not initialized
+21:51:39.326: [obs-backgroundremoval] Model is not initialized
+21:51:39.359: [obs-backgroundremoval] Model is not initialized
+21:51:39.392: [obs-backgroundremoval] Model is not initialized
+21:51:39.426: [obs-backgroundremoval] Model is not initialized
+21:51:39.459: [obs-backgroundremoval] Model is not initialized
+21:51:39.492: [obs-backgroundremoval] Model is not initialized
+21:51:39.526: [obs-backgroundremoval] Model is not initialized
+21:51:39.559: [obs-backgroundremoval] Model is not initialized
+21:51:39.592: [obs-backgroundremoval] Model is not initialized
+21:51:39.626: [obs-backgroundremoval] Model is not initialized
+21:51:39.659: [obs-backgroundremoval] Model is not initialized
+21:51:39.692: [obs-backgroundremoval] Model is not initialized
+21:51:39.726: [obs-backgroundremoval] Model is not initialized
+21:51:39.759: [obs-backgroundremoval] Model is not initialized
+21:51:39.792: [obs-backgroundremoval] Model is not initialized
+21:51:39.826: [obs-backgroundremoval] Model is not initialized
+21:51:39.859: [obs-backgroundremoval] Model is not initialized
+21:51:39.892: [obs-backgroundremoval] Model is not initialized
+21:51:39.926: [obs-backgroundremoval] Model is not initialized
+21:51:39.959: [obs-backgroundremoval] Model is not initialized
+21:51:41.483: Last log entry repeated for 45 more lines
+21:51:41.483: [obs-backgroundremoval] Model models/mediapipe.onnx input 0: name input_1:0 shape (4 dim) 1 x 144 x 256 x 3
+21:51:41.483: [obs-backgroundremoval] Model models/mediapipe.onnx output 0: name segment:0 shape (4 dim) 1 x 144 x 256 x 2
+21:51:41.483: [obs-backgroundremoval] Allocated 110592 sized float-array for input 0
+21:51:41.483: [obs-backgroundremoval] Allocated 73728 sized float-array for output 0
+21:51:41.483: [obs-backgroundremoval] Background Removal Filter Options:
+21:51:41.483: [obs-backgroundremoval]   Source: Background Removal
+21:51:41.483: [obs-backgroundremoval]   Model: models/mediapipe.onnx
+21:51:41.483: [obs-backgroundremoval]   Inference Device: cpu
+21:51:41.483: [obs-backgroundremoval]   Num Threads: 1
+21:51:41.483: [obs-backgroundremoval]   Enable Threshold: true
+21:51:41.483: [obs-backgroundremoval]   Threshold: 0.500000
+21:51:41.483: [obs-backgroundremoval]   Contour Filter: 0.050000
+21:51:41.483: [obs-backgroundremoval]   Smooth Contour: 0.500000
+21:51:41.483: [obs-backgroundremoval]   Feather: 0.000000
+21:51:41.483: [obs-backgroundremoval]   Mask Every X Frames: 1
+21:51:41.483: [obs-backgroundremoval]   Enable Image Similarity: true
+21:51:41.483: [obs-backgroundremoval]   Image Similarity Threshold: 35.000000
+21:51:41.483: [obs-backgroundremoval]   Blur Background: 0
+21:51:41.483: [obs-backgroundremoval]   Enable Focal Blur: false
+21:51:41.483: [obs-backgroundremoval]   Blur Focus Point: 0.100000
+21:51:41.483: [obs-backgroundremoval]   Blur Focus Depth: 0.000000
+21:51:41.483: [obs-backgroundremoval]   Disabled: true
+21:51:41.483: [obs-backgroundremoval]   Model file path: /app/plugins/share/obs/obs-plugins/obs-backgroundremoval/models/mediapipe.onnx
+21:51:41.992: [obs-backgroundremoval] Background filter updated
+21:51:41.992: [obs-backgroundremoval] Background Removal Filter Options:
+21:51:41.992: [obs-backgroundremoval]   Source: Background Removal
+21:51:41.992: [obs-backgroundremoval]   Model: models/mediapipe.onnx
+21:51:41.993: [obs-backgroundremoval]   Inference Device: cpu
+21:51:41.993: [obs-backgroundremoval]   Num Threads: 1
+21:51:41.993: [obs-backgroundremoval]   Enable Threshold: true
+21:51:41.993: [obs-backgroundremoval]   Threshold: 0.500000
+21:51:41.993: [obs-backgroundremoval]   Contour Filter: 0.050000
+21:51:41.993: [obs-backgroundremoval]   Smooth Contour: 0.500000
+21:51:41.993: [obs-backgroundremoval]   Feather: 0.000000
+21:51:41.993: [obs-backgroundremoval]   Mask Every X Frames: 1
+21:51:41.993: [obs-backgroundremoval]   Enable Image Similarity: true
+21:51:41.993: [obs-backgroundremoval]   Image Similarity Threshold: 35.000000
+21:51:41.993: [obs-backgroundremoval]   Blur Background: 0
+21:51:41.993: [obs-backgroundremoval]   Enable Focal Blur: false
+21:51:41.993: [obs-backgroundremoval]   Blur Focus Point: 0.100000
+21:51:41.993: [obs-backgroundremoval]   Blur Focus Depth: 0.000000
+21:51:41.993: [obs-backgroundremoval]   Disabled: true
+21:51:41.993: [obs-backgroundremoval]   Model file path: /app/plugins/share/obs/obs-plugins/obs-backgroundremoval/models/mediapipe.onnx
+21:51:42.196: [obs-backgroundremoval] get_latest_version: 
+21:51:43.568: [obs-backgroundremoval] Model models/semantic_guided_llie_180x324.onnx input 0: name input shape (4 dim) 1 x 3 x 180 x 324
+21:51:43.568: [obs-backgroundremoval] Model models/semantic_guided_llie_180x324.onnx output 0: name output shape (4 dim) 1 x 3 x 180 x 324
+21:51:43.569: [obs-backgroundremoval] Allocated 174960 sized float-array for input 0
+21:51:43.569: [obs-backgroundremoval] Allocated 174960 sized float-array for output 0
+21:51:44.902: [obs-backgroundremoval] Model models/semantic_guided_llie_180x324.onnx input 0: name input shape (4 dim) 1 x 3 x 180 x 324
+21:51:44.902: [obs-backgroundremoval] Model models/semantic_guided_llie_180x324.onnx output 0: name output shape (4 dim) 1 x 3 x 180 x 324
+21:51:44.902: [obs-backgroundremoval] Allocated 174960 sized float-array for input 0
+21:51:44.902: [obs-backgroundremoval] Allocated 174960 sized float-array for output 0
+21:51:45.701: [obs-backgroundremoval] Model models/semantic_guided_llie_180x324.onnx input 0: name input shape (4 dim) 1 x 3 x 180 x 324
+21:51:45.701: [obs-backgroundremoval] Model models/semantic_guided_llie_180x324.onnx output 0: name output shape (4 dim) 1 x 3 x 180 x 324
+21:51:45.701: [obs-backgroundremoval] Allocated 174960 sized float-array for input 0
+21:51:45.701: [obs-backgroundremoval] Allocated 174960 sized float-array for output 0
+21:51:50.942: [obs-backgroundremoval] Model models/uretinex_net_180x320.onnx input 0: name input shape (4 dim) 1 x 3 x 180 x 320
+21:51:50.942: [obs-backgroundremoval] Model models/uretinex_net_180x320.onnx input 1: name exposure_ratio_3to5 shape (1 dim) 1 x 0 x 0 x 0
+21:51:50.942: [obs-backgroundremoval] Model models/uretinex_net_180x320.onnx output 0: name output shape (4 dim) 1 x 3 x 180 x 320
+21:51:50.942: [obs-backgroundremoval] Allocated 172800 sized float-array for input 0
+21:51:50.942: [obs-backgroundremoval] Allocated 1 sized float-array for input 1
+21:51:50.942: [obs-backgroundremoval] Allocated 172800 sized float-array for output 0
+21:51:53.332: [obs-backgroundremoval] /onnxruntime_src/onnxruntime/core/session/provider_bridge_ort.cc:1209 onnxruntime::Provider& onnxruntime::ProviderLibrary::Get() [ONNXRuntimeError] : 1 : FAIL : Failed to load library libonnxruntime_providers_tensorrt.so with error: libcudnn.so.8: cannot open shared object file: No such file or directory
+21:51:53.332: 
+21:52:04.418: [obs-backgroundremoval] /onnxruntime_src/onnxruntime/core/session/provider_bridge_ort.cc:1209 onnxruntime::Provider& onnxruntime::ProviderLibrary::Get() [ONNXRuntimeError] : 1 : FAIL : Failed to load library libonnxruntime_providers_tensorrt.so with error: libcudnn.so.8: cannot open shared object file: No such file or directory
+21:52:04.418: 

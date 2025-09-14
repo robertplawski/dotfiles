@@ -62,7 +62,7 @@ sudo dnf -y install x265 x265-libs x265-devel ffmpeg mpv
 
 # 6. Basic applications
 info "Installing basic applications..."
-sudo dnf -y install alacritty firefox thunar xarchiver thunar-archive-plugin qbittorrent pavucontrol audacity cheese gimp vlc krita libreoffice mpv thunderbird discord
+sudo dnf -y install alacritty firefox thunar xarchiver thunar-archive-plugin qbittorrent blender pavucontrol audacity cheese gimp vlc krita libreoffice mpv thunderbird discord
 
 ask "Do you want to install snaps"
 read -r answer

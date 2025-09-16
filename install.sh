@@ -57,7 +57,11 @@ sudo dnf -y install x265 x265-libs x265-devel ffmpeg mpv
 
 # 6. Basic applications
 info "Installing basic applications..."
-sudo dnf -y install alacritty firefox thunar xarchiver thunar-archive-plugin qbittorrent blender pavucontrol audacity cheese gimp vlc krita libreoffice mpv thunderbird discord
+sudo dnf -y install alacritty chromium thunar xarchiver thunar-archive-plugin qbittorrent blender pavucontrol audacity cheese gimp vlc krita libreoffice mpv thunderbird discord
+
+info "Installing librewolf..."
+curl -fsSL https://repo.librewolf.net/librewolf.repo | pkexec tee /etc/yum.repos.d/librewolf.repo
+sudo dnf install librewolf
 
 ask "Do you want to install flatpaks "
 read -r answer
@@ -130,6 +134,8 @@ fi
 
 # 10. VS Code installation & extensions backup
 info "Installing VS Code and backing up extensions..."
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
 sudo dnf -y install code
 [ -f ./vscode-extensions.txt ] && info "Restoring VS Code extensions..." && tr ',' '\n' <~/dotfiles/vscode-extensions.txt | xargs -I{} sh -c 'code --install-extension "{}" || warn "Failed to install extension: {}"' || warn "VS Code extensions backup not found"
 

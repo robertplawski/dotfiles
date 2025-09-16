@@ -29,9 +29,9 @@ sudo dnf -y install \
   https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 # Optional: Terra repo
-info "Adding Terra repository..."
-releasever=$(rpm -E %fedora)
-sudo dnf -y install --nogpgcheck --repofrompath "terra,https://repos.fyralabs.com/terra$releasever" terra-release || warn "Terra repo failed"
+#info "Adding Terra repository..."
+#releasever=$(rpm -E %fedora)
+#sudo dnf -y install --nogpgcheck --repofrompath "terra,https://repos.fyralabs.com/terra$releasever" terra-release || warn "Terra repo failed"
 
 ask "Do you want to install NVIDIA drivers?"
 read -r answer

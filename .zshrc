@@ -108,6 +108,9 @@ ZSH_WEB_SEARCH_ENGINES=(reddit "https://old.reddit.com/search/?q=")
 alias vim="nvim"
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# flatpak shortened aliases
+source "$HOME/.config/flatpak_aliases.sh"
+
 # cuda
 export PATH=/usr/local/cuda/bin:$PATH
 

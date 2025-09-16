@@ -120,6 +120,7 @@ if [ ! -d "$HOME/.oh-my-zsh" ]; then
 else
   info "Oh My Zsh already installed"
 fi
+sudo dnf install zsh-autosuggestions zsh-syntax-highlighting
 
 ask "Do you want to install the Starship prompt? (y/n) "
 read -r answer

@@ -71,16 +71,14 @@ ZSH_THEME="essembeh"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-
-
 plugins=(git
   wp-cli
   zsh-autosuggestions
+  zsh-syntax-highlighting
   web-search
 )
 
 ZSH_WEB_SEARCH_ENGINES=(reddit "https://old.reddit.com/search/?q=")
-source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -107,26 +105,17 @@ source $ZSH/oh-my-zsh.sh
 # - $ZSH_CUSTOM/macos.zsh
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
 alias vim="nvim"
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-#antigen bundle zsh-users/zsh-autosuggestions
 
 # cuda
 export PATH=/usr/local/cuda/bin:$PATH
 
-# bun completions
-[ -s "/home/robert/.bun/_bun" ] && source "/home/robert/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-# opencode
-export PATH=/home/robert/.opencode/bin:$PATH
-
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
+# starship
+eval "$(starship init zsh)"
+
+

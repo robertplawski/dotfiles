@@ -17,6 +17,10 @@ fi
 info "Copying the configuration to .config"
 cp -r "$SCRIPT_DIR"/* "$HOME/.config/"
 
+info "Copying zshrc config"
+cp ".zshrc" "$HOME"
+cp ".profile" "$HOME"
+
 sudo mkdir -p /backup
 while IFS= read -r line || [[ -n "$line" ]]; do
   [[ -z "$line" || "$line" =~ ^# ]] && continue # skip empty lines/comments

@@ -28,11 +28,6 @@ sudo dnf -y install \
   https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
   https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
-# Optional: Terra repo
-#info "Adding Terra repository..."
-#releasever=$(rpm -E %fedora)
-#sudo dnf -y install --nogpgcheck --repofrompath "terra,https://repos.fyralabs.com/terra$releasever" terra-release || warn "Terra repo failed"
-
 ask "Do you want to install NVIDIA drivers?"
 read -r answer
 
@@ -64,22 +59,6 @@ sudo dnf -y install x265 x265-libs x265-devel ffmpeg mpv
 info "Installing basic applications..."
 sudo dnf -y install alacritty firefox thunar xarchiver thunar-archive-plugin qbittorrent blender pavucontrol audacity cheese gimp vlc krita libreoffice mpv thunderbird discord
 
-ask "Do you want to install snaps"
-read -r answer
-
-if [[ "$answer" =~ ^[Yy]$ ]]; then
-  echo "Installing snaps..."
-  sudo dnf install snapd
-  sudo systemctl enable --now snapd.socket
-  sudo ln -s /var/lib/snapd/snap /snap || warn "Failure creating snap link / maybe already installed..."
-  sudo snap install android-studio
-  sudo snap install slack
-  sudo snap install bruno
-  sudo snap install upscayl
-else
-  echo "Skipping snap installation."
-fi
-
 ask "Do you want to install flatpaks "
 read -r answer
 
@@ -97,6 +76,8 @@ if [[ "$answer" =~ ^[Yy]$ ]]; then
   flatpak install flathub org.vinegarhq.Sober -y
   flatpak install flathub io.github.qwersyk.Newelle -y
   flatpak install flathub com.stremio.Stremio -y
+  flatpak install flathub com.usebruno.Bruno -y
+  flatpak install flathub com.slack.Slack -y
 
 else
   info "Skipping flatpak installation."

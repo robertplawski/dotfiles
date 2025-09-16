@@ -49,7 +49,7 @@ fi
 
 # 4. Hyprland & utilities
 info "Installing Hyprland and utilities..."
-sudo dnf -y install hyprland hyprpaper hyprlock hyprshot hyprpicker hyprpanel xdg-desktop-portal-hyprland cifs-utils nfs-utils lxpolkit
+sudo dnf -y install hyprland hyprpaper hyprlock hyprshot hyprpicker hyprpanel xdg-desktop-portal-hyprland cifs-utils nfs-utils lxpolkit rofi
 
 # 5. Multimedia apps & codecs (Feishin included)
 info "Installing multimedia codecs and apps..."

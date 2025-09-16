@@ -114,6 +114,9 @@ alias vim="nvim"
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #antigen bundle zsh-users/zsh-autosuggestions
 
+# cuda
+export PATH=/usr/local/cuda/bin:$PATH
+
 # bun completions
 [ -s "/home/robert/.bun/_bun" ] && source "/home/robert/.bun/_bun"
 

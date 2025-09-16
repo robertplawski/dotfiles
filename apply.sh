@@ -18,8 +18,15 @@ info "Copying the configuration to .config"
 cp -r "$SCRIPT_DIR"/* "$HOME/.config/"
 
 info "Copying zshrc config"
-cp ".zshrc" "$HOME"
-cp ".profile" "$HOME"
+cp -a ".zshrc" "$HOME"
+cp -a ".zprofile" "$HOME"
+chsh -s $(which zsh)
+
+
+info "Setting up autologin"
+sudo mkdir -p /etc/systemd/system/getty@tty1.service.d && echo -e "[Service]\nExecStart=\nExecStart=-/sbin/agetty --autologin $(whoami) --noclear %I \$TERM\nType=simple" | sudo tee /etc/systemd/system/getty@tty1.service.d/override.conf > /dev/null && sudo systemctl daemon-reexec && sudo systemctl daemon-reload && sudo systemctl restart getty@tty1
+
+info "Setting up backups"
 
 sudo mkdir -p /backup
 while IFS= read -r line || [[ -n "$line" ]]; do

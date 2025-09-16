@@ -49,7 +49,7 @@ fi
 
 # 4. Hyprland & utilities
 info "Installing Hyprland and utilities..."
-sudo dnf -y install hyprland hyprpaper hyprlock hyprshot hyprpicker hyprpanel xdg-desktop-portal-hyprland cifs-utils nfs-utils lxpolkit rofi
+sudo dnf -y install hyprland hyprpaper hyprlock hyprshot hyprpicker hyprpanel xdg-desktop-portal-hyprland cifs-utils nfs-utils lxpolkit rofi wget nwg-look
 
 # 5. Multimedia apps & codecs (Feishin included)
 info "Installing multimedia codecs and apps..."
@@ -99,7 +99,7 @@ fi
 info "Installing development tools..."
 sudo dnf -y install \
   python3 python3-pip golang rust nodejs npm gcc gcc-c++ make cmake gdb \
-  git zsh vim neovim tmux curl wget fzf ripgrep htop tree gh yq jq
+  git zsh vim neovim tmux curl fzf ripgrep htop tree gh yq jq
 
 # 8. Docker
 info "Installing Docker..."

@@ -65,12 +65,22 @@ case $CHOICE in
         sudo dnf install Sunshine -y
         sudo setcap cap_sys_admin+p "$(readlink -f "$(which sunshine)")"
         systemctl --user enable sunshine --now
-sudo firewall-cmd --permanent --add-port=47984/tcp
-sudo firewall-cmd --permanent --add-port=48010/tcp
-sudo firewall-cmd --permanent --add-port=47989/tcp
-sudo firewall-cmd --permanent --add-port=47999/udp
-sudo firewall-cmd --reload
-        info "Sunshine installed and enabled."
+
+	sudo firewall-cmd --permanent --add-port=47998/udp
+	sudo firewall-cmd --permanent --add-port=47999/udp
+	sudo firewall-cmd --permanent --add-port=48000/udp
+	sudo firewall-cmd --permanent --add-port=48002/udp
+	sudo firewall-cmd --permanent --add-port=48010/udp
+
+	sudo firewall-cmd --permanent --add-port=47984/tcp
+	sudo firewall-cmd --permanent --add-port=47989/tcp
+	sudo firewall-cmd --permanent --add-port=48010/tcp
+
+
+	sudo firewall-cmd --reload
+
+	
+	info "Sunshine installed and enabled."
         ;;
     client)
         cp "$SCRIPT_DIR/client.desktop" "$DEST_DIR/"

@@ -26,9 +26,7 @@ cat > "$SCRIPT_DIR/start_moonlight.sh" <<'EOF'
 #!/bin/bash
 SERVER_IP="192.168.1.120"  # Replace with your server IP
 echo "Connecting to Sunshine server at $SERVER_IP..."
-pkill hyprlock
 moonlight stream "$SERVER_IP" "Desktop"
-hyprlock &
 EOF
 chmod +x "$SCRIPT_DIR/start_moonlight.sh"
 

@@ -29,13 +29,11 @@ echo "Connecting to Sunshine server at $SERVER_IP..."
 moonlight stream "$SERVER_IP" "Desktop"
 EOF
 chmod +x "$SCRIPT_DIR/start_moonlight.sh"
-
-# Generate .desktop files dynamically
 cat > "$SCRIPT_DIR/server.desktop" <<EOF
 [Desktop Entry]
 Name=Disconnect all clients
 Comment=Disconnect all connected clients
-Exec=bash -c 'DIR="\$(dirname "\$(realpath "%k")")"; "\$DIR/disconnect_clients.sh"'
+Exec=$SCRIPT_DIR/disconnect_clients.sh
 Icon=network-server
 Terminal=true
 Type=Application
@@ -46,7 +44,7 @@ cat > "$SCRIPT_DIR/client.desktop" <<EOF
 [Desktop Entry]
 Name=Moonlight Client
 Comment=Connect to a Sunshine server
-Exec=bash -c 'DIR="\$(dirname "\$(realpath "%k")")"; "\$DIR/start_moonlight.sh"'
+Exec=$SCRIPT_DIR/start_moonlight.sh
 Icon=computer
 Terminal=false
 Type=Application

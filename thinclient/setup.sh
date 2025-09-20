@@ -19,11 +19,6 @@ cat > "$SCRIPT_DIR/disconnect_clients.sh" <<'EOF'
 echo "Disconnecting all connected clients..."
 systemctl restart sunshine --user
 echo "All clients disconnected."
-sudo firewall-cmd --permanent --add-port=47984/tcp
-sudo firewall-cmd --permanent --add-port=48010/tcp
-sudo firewall-cmd --permanent --add-port=47989/tcp
-sudo firewall-cmd --permanent --add-port=47999/udp
-sudo firewall-cmd --reload
 EOF
 chmod +x "$SCRIPT_DIR/disconnect_clients.sh"
 
@@ -70,6 +65,11 @@ case $CHOICE in
         sudo dnf install Sunshine -y
         sudo setcap cap_sys_admin+p "$(readlink -f "$(which sunshine)")"
         systemctl --user enable sunshine --now
+sudo firewall-cmd --permanent --add-port=47984/tcp
+sudo firewall-cmd --permanent --add-port=48010/tcp
+sudo firewall-cmd --permanent --add-port=47989/tcp
+sudo firewall-cmd --permanent --add-port=47999/udp
+sudo firewall-cmd --reload
         info "Sunshine installed and enabled."
         ;;
     client)

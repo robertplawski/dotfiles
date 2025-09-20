@@ -31,7 +31,7 @@ sudo dnf -y install \
 
 ask "Do you want to install NVIDIA drivers?"
 read -r answer
-
+if lspci | grep -i nvidia; then
 if [[ "$answer" =~ ^[Yy]$ ]]; then
   info "Installing NVIDIA drivers..."
   sudo dnf -y install akmod-nvidia xorg-x11-drv-nvidia-cuda || warn "NVIDIA driver installation failed. Skipping..."
@@ -47,6 +47,10 @@ if [[ "$answer" =~ ^[Yy]$ ]]; then
 else
   info "Skipping nvidia drivers install"
 fi
+else
+    info "No NVIDIA GPU detected. Skipping drivers."
+fi
+
 
 # 4. Hyprland & utilities
 info "Installing Hyprland and utilities..."
@@ -83,7 +87,6 @@ if [[ "$answer" =~ ^[Yy]$ ]]; then
   sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
   flatpak install flathub com.obsproject.Studio -y
   flatpak install flathub com.obsproject.Studio.Plugin.BackgroundRemoval -y
-  flatpak install flathub com.moonlight_stream.Moonlight -y
   flatpak install flathub io.github.streetpea.Chiaki4deck -y
   flatpak install flathub org.prismlauncher.PrismLauncher -y
   flatpak install flathub org.vinegarhq.Sober -y
@@ -97,25 +100,16 @@ else
   info "Skipping flatpak installation."
 fi
 
-info "Installing sunshine/moonlight streaming"
-sudo dnf copr enable lizardbyte/stable -y
-sudo dnf install Sunshine -y
-sudo setcap cap_sys_admin+p $(readlink -f $(which sunshine))
-sudo -i PULSE_SERVER=unix:/run/user/$(id -u $whoami)/pulse/native flatpak run dev.lizardbyte.app.Sunshine
-systemctl --user enable sunshine --now
-
-
 ask "Do you want to game on this system?"
 read -r answer
 
 if [[ "$answer" =~ ^[Yy]$ ]]; then
-
   sudo dnf install -y retroarch lutris wine winetricks protontricks
   sudo dnf install -y $(curl -s https://api.github.com/repos/Open-Wine-Components/umu-launcher/releases/latest | grep -oP '"browser_download_url": "\K.*umu-launcher-.*\.rpm' | head -n1)
   sudo dnf install -y $(curl -s https://api.github.com/repos/hydralauncher/hydra/releases/latest | grep -oP '"browser_download_url": "\K.*hydralauncher-.*\.rpm' | head -n1)
 
 else
-  info "Skipping game media installation"
+  info "Skipping game installation"
 fi
 # 7. Development tools & programming languages
 info "Installing development tools..."

@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 set -euo pipefail
 IFS=$'\n\t'
 
@@ -51,13 +52,22 @@ fi
 info "Installing Hyprland and utilities..."
 sudo dnf -y install hyprland hyprpaper hyprlock hyprshot hyprpicker hyprpanel xdg-desktop-portal-hyprland cifs-utils nfs-utils lxpolkit rofi wget nwg-look
 
+info "Installing themes and icons..."
+sudo dnf install materia-gtk-theme
+sudo dnf install papirus-icon-theme
+
+info "Installing printers.."
+sudo dnf install cups cups-client cups-filters system-config-printer
+sudo systemctl enable --now cups
+
+
 # 5. Multimedia apps & codecs (Feishin included)
 info "Installing multimedia codecs and apps..."
 sudo dnf -y install x265 x265-libs x265-devel ffmpeg mpv
 
 # 6. Basic applications
 info "Installing basic applications..."
-sudo dnf -y install alacritty chromium thunar xarchiver thunar-archive-plugin qbittorrent blender pavucontrol audacity cheese gimp vlc krita libreoffice mpv thunderbird discord
+sudo dnf -y install alacritty chromium thunar xarchiver thunar-archive-plugin qbittorrent blender pavucontrol audacity cheese gimp vlc krita libreoffice mpv thunderbird discord zathura zathura-pdf-mupdf
 
 info "Installing librewolf..."
 curl -fsSL https://repo.librewolf.net/librewolf.repo | pkexec tee /etc/yum.repos.d/librewolf.repo
@@ -73,7 +83,6 @@ if [[ "$answer" =~ ^[Yy]$ ]]; then
   sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
   flatpak install flathub com.obsproject.Studio -y
   flatpak install flathub com.obsproject.Studio.Plugin.BackgroundRemoval -y
-  flatpak install flathub dev.lizardbyte.app.Sunshine -y
   flatpak install flathub com.moonlight_stream.Moonlight -y
   flatpak install flathub io.github.streetpea.Chiaki4deck -y
   flatpak install flathub org.prismlauncher.PrismLauncher -y
@@ -82,10 +91,19 @@ if [[ "$answer" =~ ^[Yy]$ ]]; then
   flatpak install flathub com.stremio.Stremio -y
   flatpak install flathub com.usebruno.Bruno -y
   flatpak install flathub com.slack.Slack -y
+  flatpak install flathub com.google.AndroidStudio -y
 
 else
   info "Skipping flatpak installation."
 fi
+
+info "Installing sunshine/moonlight streaming"
+sudo dnf copr enable lizardbyte/stable -y
+sudo dnf install Sunshine -y
+sudo setcap cap_sys_admin+p $(readlink -f $(which sunshine))
+sudo -i PULSE_SERVER=unix:/run/user/$(id -u $whoami)/pulse/native flatpak run dev.lizardbyte.app.Sunshine
+systemctl --user enable sunshine --now
+
 
 ask "Do you want to game on this system?"
 read -r answer
@@ -101,9 +119,25 @@ else
 fi
 # 7. Development tools & programming languages
 info "Installing development tools..."
+
 sudo dnf -y install \
-  python3 python3-pip golang rust nodejs npm gcc gcc-c++ make cmake gdb \
+  python3 python3-devel python3-pip golang rust nodejs npm gcc gcc-c++ make cmake gdb \
   git zsh vim neovim tmux curl fzf ripgrep htop tree gh yq jq
+
+info "Installing vibecoding tools"
+curl -fsSL https://opencode.ai/install | bash
+npx forgecode@latest
+
+info "Installing virtualization"
+sudo dnf install @virtualization
+sudo systemctl enable --now libvirtd
+
+
+info "Downloading QT6 dev toolkit"
+#wget -O qt-online-installer-linux-x64.run $(curl -s https://www.qt.io/download-qt-installer-oss | grep -oP 'https://[^"]+linux-x64[^"]+') && chmod +x qt-online-installer-linux-x64.run  
+#info "Now you can find it at $(pwd)/qt-online-installer-linux-x64.run"
+sudo dnf install qt-creator qt6-qtbase-devel qt6-qtmultimedia qt6-qttools qt6-qtwayland qt6-qtcharts qt6-qtwebsockets qt6-qtwebengine
+
 
 # 8. Docker
 info "Installing Docker..."

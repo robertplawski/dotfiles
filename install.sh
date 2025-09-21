@@ -8,6 +8,8 @@ ask() { echo -e "\e[32m[ASK]\e[0m $*"; }
 info() { echo -e "\e[34m[INFO]\e[0m $*"; }
 warn() { echo -e "\e[33m[WARN]\e[0m $*"; }
 
+sudo -v
+
 # 1. System update
 ask "Do you want to update the system? (y/n)"
 read -r answer
@@ -28,6 +30,7 @@ sudo dnf -y copr enable heus-sueh/packages
 sudo dnf -y install \
   https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
   https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
 
 info "Starting thinclient setup"
 ./thinclient/setup.sh 
@@ -77,8 +80,12 @@ info "Installing basic applications..."
 sudo dnf -y install alacritty chromium thunar xarchiver thunar-archive-plugin qbittorrent blender pavucontrol audacity cheese gimp vlc krita libreoffice mpv thunderbird discord zathura zathura-pdf-mupdf
 
 info "Installing librewolf..."
-curl -fsSL https://repo.librewolf.net/librewolf.repo | pkexec tee /etc/yum.repos.d/librewolf.repo
+curl -fsSL https://repo.librewolf.net/librewolf.repo | sudo tee /etc/yum.repos.d/librewolf.repo
 sudo dnf install librewolf
+
+info "Installing tailscale"
+curl -fsSL https://tailscale.com/install.sh | sh
+sudo tailscale up
 
 ask "Do you want to install flatpaks "
 read -r answer
@@ -123,7 +130,8 @@ sudo dnf -y install \
 
 info "Installing vibecoding tools"
 curl -fsSL https://opencode.ai/install | bash
-npx forgecode@latest
+sudo npm install -g forgecode@latest
+
 
 info "Installing virtualization"
 sudo dnf install @virtualization

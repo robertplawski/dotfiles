@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Moonlight Client
 Comment=Connect to a Sunshine server
-Exec=bash -c 'DIR="$(dirname "$(realpath "%k")")"; "$DIR/start_moonlight.sh"'
+Exec=/home/robert/dotfiles/thinclient/start_moonlight.sh
 Icon=computer
 Terminal=false
 Type=Application

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Disconnect all clients
 Comment=Disconnect all connected clients
-Exec=bash -c 'DIR="$(dirname "$(realpath "%k")")"; "$DIR/disconnect_clients.sh"'
+Exec=/home/robert/dotfiles/thinclient/disconnect_clients.sh
 Icon=network-server
 Terminal=true
 Type=Application

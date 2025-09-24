@@ -1,0 +1,82 @@
+#!/bin/bash
+
+# ------------------------------
+# Web App Desktop Launcher Creator with Real Favicon
+# ------------------------------
+
+# Check if a URL and a name are provided
+if [ -z "$1" ] || [ -z "$2" ]; then
+  echo "Usage: $0 <URL> <AppName>"
+  echo "Example: $0 https://chat.qwen.ai/c/guest QwenAI"
+  exit 1
+fi
+
+URL="$1"
+APP_NAME="$2"
+DESKTOP_DIR="$HOME/.local/share/applications"
+DESKTOP_FILE="$DESKTOP_DIR/${APP_NAME}.webapp.desktop"
+ICON_DIR="$HOME/.local/share/icons/webapps"
+ICON_FILE="$ICON_DIR/${APP_NAME}.png"
+
+# Determine Chromium executable
+if command -v chromium-browser >/dev/null 2>&1; then
+  CHROMIUM_CMD="chromium-browser"
+elif command -v chromium >/dev/null 2>&1; then
+  CHROMIUM_CMD="chromium"
+elif flatpak list | grep -q org.chromium.Chromium; then
+  CHROMIUM_CMD="flatpak run org.chromium.Chromium"
+else
+  echo "Chromium not found! Please install it."
+  exit 1
+fi
+
+# Create necessary directories
+mkdir -p "$DESKTOP_DIR" "$ICON_DIR"
+
+# Try to get favicon from site HTML
+if command -v wget >/dev/null 2>&1 && command -v convert >/dev/null 2>&1; then
+  HTML=$(wget -qO- "$URL")
+  FAVICON_URL=$(echo "$HTML" | grep -Eoi '<link[^>]+rel=["'"'"']shortcut icon["'"'"']' | grep -Eoi 'href=["'"'"'][^"'"'"']+' | head -1 | cut -d'"' -f2)
+
+  # If not found, try regular icon
+  if [ -z "$FAVICON_URL" ]; then
+    FAVICON_URL=$(echo "$HTML" | grep -Eoi '<link[^>]+rel=["'"'"']icon["'"'"']' | grep -Eoi 'href=["'"'"'][^"'"'"']+' | head -1 | cut -d'"' -f2)
+  fi
+
+  # Make URL absolute if necessary
+  if [ -n "$FAVICON_URL" ]; then
+    case "$FAVICON_URL" in
+    http*) ;; # already absolute
+    /*) FAVICON_URL="$(echo $URL | sed -E 's#(https?://[^/]+).*#\1#')$FAVICON_URL" ;;
+    *) FAVICON_URL="$(echo $URL | sed -E 's#(https?://[^/]+).*#\1#')/$FAVICON_URL" ;;
+    esac
+
+    TEMP_ICON="$ICON_FILE.tmp"
+    wget -qO "$TEMP_ICON" "$FAVICON_URL"
+    if [ -s "$TEMP_ICON" ]; then
+      convert "$TEMP_ICON" "$ICON_FILE" >/dev/null 2>&1
+      rm "$TEMP_ICON"
+    else
+      ICON_FILE="web-browser"
+    fi
+  else
+    ICON_FILE="web-browser"
+  fi
+else
+  ICON_FILE="web-browser"
+fi
+
+# Write the .desktop file
+cat >"$DESKTOP_FILE" <<EOF
+[Desktop Entry]
+Name=$APP_NAME
+Comment=Launch $APP_NAME web app in Chromium
+Exec=$CHROMIUM_CMD --app=$URL
+Icon=$ICON_FILE
+Terminal=false
+Type=Application
+Categories=Network;Utility;
+EOF
+
+chmod +x "$DESKTOP_FILE"
+echo "Desktop launcher created: $DESKTOP_FILE"

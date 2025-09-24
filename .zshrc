@@ -1,4 +1,5 @@
 # If you come from bash you might have to change your $PATH.
+#
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your Oh My Zsh installation.
@@ -112,6 +113,10 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ~/.config/flatpak_aliases.sh
 source ~/.config/flatpak_aliases.txt
 
+# fixed gtk webview apps
+export WEBKIT_DISABLE_DMABUF_RENDERER=1
+
+
 # cuda
 export PATH=/usr/local/cuda/bin:$PATH
 
@@ -121,5 +126,3 @@ fi
 
 # starship
 eval "$(starship init zsh)"
-
-

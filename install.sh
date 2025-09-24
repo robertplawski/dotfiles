@@ -31,32 +31,30 @@ sudo dnf -y install \
   https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
   https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
-
 info "Starting thinclient setup"
-./thinclient/setup.sh 
+./thinclient/setup.sh
 
 ask "Do you want to install NVIDIA drivers?"
 read -r answer
 if lspci | grep -i nvidia; then
-if [[ "$answer" =~ ^[Yy]$ ]]; then
-  info "Installing NVIDIA drivers..."
-  sudo dnf -y install akmod-nvidia xorg-x11-drv-nvidia-cuda || warn "NVIDIA driver installation failed. Skipping..."
-  sudo wget https://developer.download.nvidia.com/compute/cuda/repos/fedora42/x86_64/cuda-fedora42.repo -O /etc/yum.repos.d/cuda-fedora42.repo
-  sudo dnf -y install cuda
-  sudo dnf install -y nvidia-docker2
-  sudo dnf install -y nvidia-container-toolkit
+  if [[ "$answer" =~ ^[Yy]$ ]]; then
+    info "Installing NVIDIA drivers..."
+    sudo dnf -y install akmod-nvidia xorg-x11-drv-nvidia-cuda || warn "NVIDIA driver installation failed. Skipping..."
+    sudo wget https://developer.download.nvidia.com/compute/cuda/repos/fedora42/x86_64/cuda-fedora42.repo -O /etc/yum.repos.d/cuda-fedora42.repo
+    sudo dnf -y install cuda
+    sudo dnf install -y nvidia-docker2
+    sudo dnf install -y nvidia-container-toolkit
 
-  echo 'export PATH=/usr/local/cuda/bin:$PATH' >>~/.bashrc
-  echo 'export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH' >>~/.bashrc
-  source ~/.bashrc
+    echo 'export PATH=/usr/local/cuda/bin:$PATH' >>~/.bashrc
+    echo 'export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH' >>~/.bashrc
+    source ~/.bashrc
 
+  else
+    info "Skipping nvidia drivers install"
+  fi
 else
-  info "Skipping nvidia drivers install"
+  info "No NVIDIA GPU detected. Skipping drivers."
 fi
-else
-    info "No NVIDIA GPU detected. Skipping drivers."
-fi
-
 
 # 4. Hyprland & utilities
 info "Installing Hyprland and utilities..."
@@ -69,7 +67,6 @@ sudo dnf install papirus-icon-theme
 info "Installing printers.."
 sudo dnf install cups cups-client cups-filters system-config-printer
 sudo systemctl enable --now cups
-
 
 # 5. Multimedia apps & codecs (Feishin included)
 info "Installing multimedia codecs and apps..."
@@ -95,6 +92,7 @@ if [[ "$answer" =~ ^[Yy]$ ]]; then
   info "Installing flatpak and apps..."
   sudo dnf install flatpak
   sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+  flatpak install flathub com.bitwarden.desktop
   flatpak install flathub com.obsproject.Studio -y
   flatpak install flathub com.obsproject.Studio.Plugin.BackgroundRemoval -y
   flatpak install flathub io.github.streetpea.Chiaki4deck -y
@@ -115,6 +113,9 @@ read -r answer
 
 if [[ "$answer" =~ ^[Yy]$ ]]; then
   sudo dnf install -y retroarch lutris wine winetricks protontricks
+  sudo dnf copr enable wehagy/protonplus -y
+  sudo dnf install protonplus
+
   sudo dnf install -y $(curl -s https://api.github.com/repos/Open-Wine-Components/umu-launcher/releases/latest | grep -oP '"browser_download_url": "\K.*umu-launcher-.*\.rpm' | head -n1)
   sudo dnf install -y $(curl -s https://api.github.com/repos/hydralauncher/hydra/releases/latest | grep -oP '"browser_download_url": "\K.*hydralauncher-.*\.rpm' | head -n1)
 
@@ -132,17 +133,14 @@ info "Installing vibecoding tools"
 curl -fsSL https://opencode.ai/install | bash
 sudo npm install -g forgecode@latest
 
-
 info "Installing virtualization"
 sudo dnf install @virtualization
 sudo systemctl enable --now libvirtd
 
-
 info "Downloading QT6 dev toolkit"
-#wget -O qt-online-installer-linux-x64.run $(curl -s https://www.qt.io/download-qt-installer-oss | grep -oP 'https://[^"]+linux-x64[^"]+') && chmod +x qt-online-installer-linux-x64.run  
+#wget -O qt-online-installer-linux-x64.run $(curl -s https://www.qt.io/download-qt-installer-oss | grep -oP 'https://[^"]+linux-x64[^"]+') && chmod +x qt-online-installer-linux-x64.run
 #info "Now you can find it at $(pwd)/qt-online-installer-linux-x64.run"
 sudo dnf install qt-creator qt6-qtbase-devel qt6-qtmultimedia qt6-qttools qt6-qtwayland qt6-qtcharts qt6-qtwebsockets qt6-qtwebengine
-
 
 # 8. Docker
 info "Installing Docker..."

@@ -173,7 +173,7 @@ fi
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 info "Installing webapps"
-$SCRIPT_DIR/scripts/install-webapp https://chat.qwen.ai/ QwenAI
+$SCRIPT_DIR/scripts/install-webapp https://duck.ai/ DuckAI
 
 # 10. VS Code installation & extensions backup
 info "Installing VS Code and backing up extensions..."

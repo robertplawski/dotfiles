@@ -174,6 +174,19 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 info "Installing webapps"
 $SCRIPT_DIR/scripts/install-webapp https://duck.ai/ DuckAI
+$SCRIPT_DIR/scripts/install-webapp https://joypad.ai/ Joypad\ Tester
+
+info "Installing earlyoom"
+git clone https://github.com/rfjakob/earlyoom.git
+cd earlyoom
+make
+sudo dnf install earlyoom
+sudo systemctl enable --now earlyoom
+cd ..
+
+info "Installing kernel modules"
+sudo git clone https://github.com/paroj/xpad.git /usr/src/xpad-0.4
+sudo dkms install -m xpad -v 0.4
 
 # 10. VS Code installation & extensions backup
 info "Installing VS Code and backing up extensions..."

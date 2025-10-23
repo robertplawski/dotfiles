@@ -63,8 +63,10 @@ sudo dnf -y install hyprland hyprpaper hyprlock hyprshot hyprpicker hyprpanel xd
 info "Installing themes and icons..."
 sudo dnf install materia-gtk-theme
 sudo dnf install papirus-icon-theme
-# japanese fonts
 sudo dnf install default-fonts-cjk
+
+info "Installing fcitx / pinyin typing setup"
+sudo dnf install fcitx5 fcitx5-configtool fcitx5-qt fcitx5-chinese-addons
 
 info "Installing printers.."
 sudo dnf install cups cups-client cups-filters system-config-printer
@@ -98,6 +100,8 @@ if [[ "$answer" =~ ^[Yy]$ ]]; then
   flatpak install flathub com.parsecgaming.parsec -y
   flatpak install flathub com.bitwarden.desktop -y
   flatpak install flathub com.obsproject.Studio -y
+  flatpak install flathub com.obsproject.Studio.Plugin.CompositeBlur -y
+  flatpak install flathub com.obsproject.Studio.Plugin.SourceClone -y
   flatpak install flathub com.obsproject.Studio.Plugin.BackgroundRemoval -y
   flatpak install flathub io.github.streetpea.Chiaki4deck -y
   flatpak install flathub org.prismlauncher.PrismLauncher -y

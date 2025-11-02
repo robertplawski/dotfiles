@@ -88,6 +88,13 @@ info "Installing tailscale"
 curl -fsSL https://tailscale.com/install.sh | sh
 sudo tailscale up
 
+info "Installing open tablet driver"
+wget https://github.com/OpenTabletDriver/OpenTabletDriver/releases/latest/download/opentabletdriver-0.6.6.2-1.x86_64.rpm
+sudo dnf install ./opentabletdriver-0.6.6.2-1.x86_64.rpm -y
+sudo dracut --regenerate-all --force -y
+systemctl --user enable opentabletdriver.service --now
+rm ./opentabletdriver-0.6.6.2-1.x86_64.rpm
+
 ask "Do you want to install flatpaks "
 read -r answer
 
@@ -136,6 +143,8 @@ info "Installing development tools..."
 sudo dnf -y install \
   python3 python3-devel python3-pip golang rust nodejs npm gcc gcc-c++ make cmake gdb \
   git zsh vim neovim tmux curl fzf ripgrep htop tree gh yq jq
+
+curl -sSfL https://get.tur.so/install.sh | bash
 
 info "Installing vibecoding tools"
 curl -fsSL https://opencode.ai/install | bash

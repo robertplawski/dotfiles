@@ -103,6 +103,7 @@ if [[ "$answer" =~ ^[Yy]$ ]]; then
   info "Installing flatpak and apps..."
   sudo dnf install flatpak
   sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+  flatpak install flathub com.github.wwmm.easyeffects -y
   flatpak install flathub com.spotify.Client -y
   flatpak install flathub com.parsecgaming.parsec -y
   flatpak install flathub com.bitwarden.desktop -y

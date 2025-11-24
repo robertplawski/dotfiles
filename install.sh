@@ -193,6 +193,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 info "Installing webapps"
 $SCRIPT_DIR/scripts/install-webapp https://monkeytype.com/ Monkeytype
+$SCRIPT_DIR/scripts/install-webapp https://tree.taiga.io/ Taiga
 $SCRIPT_DIR/scripts/install-webapp https://duck.ai/ DuckAI
 $SCRIPT_DIR/scripts/install-webapp https://joypad.ai/ Joypad\ Tester
 

@@ -95,11 +95,14 @@ sudo dracut --regenerate-all --force -y
 systemctl --user enable opentabletdriver.service --now
 rm ./opentabletdriver-0.6.6.2-1.x86_64.rpm
 
+info "Installing beeper"
+wget https://beeper-desktop.download.beeper.com/builds/Beeper-4.2.482-x86_64.AppImage
+sudo mv Beeper-4.2.482-x86_64.AppImage /usr/bin/beeper
+
 ask "Do you want to install flatpaks "
 read -r answer
 
 if [[ "$answer" =~ ^[Yy]$ ]]; then
-
   info "Installing flatpak and apps..."
   sudo dnf install flatpak
   sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo

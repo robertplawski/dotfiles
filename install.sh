@@ -148,6 +148,10 @@ sudo dnf -y install \
   python3 python3-devel python3-pip golang rust nodejs npm gcc gcc-c++ make cmake gdb \
   git zsh vim neovim tmux curl fzf ripgrep htop tree gh yq jq
 
+git config --global core.editor "vim"
+git config --global user.name "robertplawski"
+git config --global user.email "dev@robertplawski.pl"
+
 curl -sSfL https://get.tur.so/install.sh | bash
 
 info "Installing vibecoding tools"

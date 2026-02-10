@@ -43,3 +43,15 @@ eval "$(starship init zsh)"
 # Turso
 export PATH="$PATH:/home/robert/.turso"
 
+#ytmpv
+ytmpv () {
+  local v_id=$1
+  local b_url="https://www.youtube.com/watch?v=$v_id"
+  local f_url
+  f_url=$(yt-dlp --proxy http://127.0.0.1:38888 -f 'best[ext=mp4]' -g "$b_url")
+  if [[ -z "$f_url" ]]; then
+      echo "❌ Failed to fetch stream. Check yt-dlp or proxy."
+      return 1
+  fi
+  mpv --quiet --http-proxy=http://127.0.0.1:38888 "$f_url" > /dev/null 2>&1
+}

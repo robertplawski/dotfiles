@@ -65,6 +65,9 @@ sudo dnf install materia-gtk-theme
 sudo dnf install papirus-icon-theme
 sudo dnf install default-fonts-cjk
 
+info "Setting up ytmpv"
+sudo dnf install mpv yt-dlp tinyproxy -y
+
 info "Installing fcitx / pinyin typing setup"
 sudo dnf install fcitx5 fcitx5-configtool fcitx5-qt fcitx5-chinese-addons
 

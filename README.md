@@ -29,4 +29,4 @@ Create backup of extensions:
 `code --list-extensions > ~/dotfiles/vscode-extensions.txt`
 
 # Windows...
-If you are on windows just run `irm "win.robertplawski.pl" | iex` for some essential tools (the script is in `windows/install.ps1`)
+If you are on windows just run `irm "win.rplawski.pl" | iex` for some essential tools (the script is in `windows/install.ps1`)
